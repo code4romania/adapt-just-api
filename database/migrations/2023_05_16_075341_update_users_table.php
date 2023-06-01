@@ -16,6 +16,7 @@ return new class extends Migration
 
             $table->string('first_name')->after('id');
             $table->string('last_name')->after('first_name');
+            $table->string('password')->nullable()->change();
 
             $table->boolean('is_active')->default(false)->after('remember_token');
 

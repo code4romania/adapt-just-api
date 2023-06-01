@@ -2,16 +2,16 @@
 
 namespace App\Constants;
 
-final readonly class PermissionConstant
+final class PermissionConstant
 {
     public static function list(): array
     {
         return [
             'users' => [
-                'ViewAny' => 'View list',
-                'Create' => 'Create',
-                'Update' => 'Update',
-                'Delete' => 'Delete',
+                'ViewAny' => 'Vizualizare utilizatori',
+                'Create' => 'Creare utilizator',
+                'Update' => 'Modificare utilizator',
+                'Delete' => 'Stergere utilizator',
             ],
         ];
     }

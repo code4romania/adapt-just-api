@@ -15,16 +15,20 @@ class Controller extends BaseController
     public function sendSuccess($message): JsonResponse
     {
         return response()->json([
-            'success' => true,
-            'message' => $message,
+            'data' => [
+                'success' => true,
+                'message' => $message
+            ]
         ]);
     }
 
     public function sendError($error, int $code = 500): JsonResponse
     {
         return response()->json([
-            'success' => false,
-            'message' => $error,
+            'data' => [
+                'success' => false,
+                'message' => $error
+            ]
         ], $code);
     }
 }

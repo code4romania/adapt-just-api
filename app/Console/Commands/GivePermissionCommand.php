@@ -13,7 +13,7 @@ class GivePermissionCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'permission:give {user_id} {permission_name}';
+    protected $signature = 'permission:give {user_id}';
 
     /**
      * The console command description.
@@ -25,16 +25,13 @@ class GivePermissionCommand extends Command
     /**
      * Execute the console command.
      */
-    public function handle(): int
+    public function handle()
     {
         $user = User::query()->find($this->argument('user_id'));
         if (! $user) {
             dd('User not found');
         }
-        $permission = Permission::query()->where('name', $this->argument('permission_name'))->first();
-        if (! $permission) {
-            dd('Permission not found');
-        }
-        $user->givePermissionTo($permission);
+        $permissions = Permission::all();
+        $user->givePermissionTo($permissions);
     }
 }

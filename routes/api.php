@@ -2,7 +2,8 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SystemController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\User\PasswordSetupController;
+use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,7 @@ Route::get('healthcheck', [SystemController::class, 'healthCheck'])->name('syste
 
 // Public routes that do not fall under authentication/authorization
 Route::post('login', [AuthController::class, 'login'])->name('auth.login');
+Route::post('setup-password/{id}/{hash}', [PasswordSetupController::class, 'setup'])->name('password.setup');
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('user', [AuthController::class, 'currentUser'])->name('auth.user');
@@ -28,9 +30,11 @@ Route::middleware('auth:sanctum')->group(function () {
 
     Route::prefix('users')->name('users.')->controller(UserController::class)->group(function () {
         Route::get('', 'index');
-        Route::get('{id}', 'show');
+        Route::get('{user}', 'show');
         Route::post('', 'store');
-        Route::delete('{id}', 'destroy');
+        Route::put('{user}', 'update');
+        Route::delete('{user}', 'destroy');
+        Route::get('/form/data', 'form');
     });
 });
 

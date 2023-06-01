@@ -33,13 +33,18 @@ class PermissionCommand extends Command
                 $name = $permissionKey.' - '.$permissionModule;
                 $dbPermission = Permission::query()->where('name', $name)
                     ->where('guard_name', 'api')
-                    ->get();
+                    ->first();
 
-                if (! $dbPermission->count()) {
+                if (!$dbPermission) {
                     Permission::create([
                         'name' => $name,
+                        'label' => $permission,
                         'module' => $permissionModule,
                         'guard_name' => 'api',
+                    ]);
+                } else {
+                    $dbPermission->update([
+                        'label' => $permission
                     ]);
                 }
             }
