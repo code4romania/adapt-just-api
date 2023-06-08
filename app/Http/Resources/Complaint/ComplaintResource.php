@@ -18,13 +18,14 @@ class ComplaintResource extends JsonResource
         return [
             'id' => $this->id,
             'victim' => $this->victim,
-            'complaint_type' => $this->complaint_type,
+            'type' => $this->type,
             'name' => $this->name,
             'location_id' => $this->location_id,
             'location_name' => $this->location_name,
             'location_to_id' => $this->location_to_id,
             'location_to_name' => $this->location_to_name,
-            'has_proof' => $this->has_proof,
+            'proof_type' => $this->proof_type,
+            'details' => $this->details,
             'uploads' => UploadResource::collection($this->uploads),
 
             'register_number' => $this->register_number,

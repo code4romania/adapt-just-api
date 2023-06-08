@@ -4,6 +4,7 @@ namespace App\Http\Resources\Upload;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Facades\Storage;
 
 class UploadResource extends JsonResource
 {
@@ -21,7 +22,8 @@ class UploadResource extends JsonResource
             'mime' => $this->mime,
             'size' => $this->size,
             'path' => $this->path,
-            'extension' => $this->extension
+            'extension' => $this->extension,
+            'dataUrl' => url(Storage::disk()->url($this->path)),
         ];
     }
 }

@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ComplaintController;
 use App\Http\Controllers\SystemController;
+use App\Http\Controllers\UploadController;
 use App\Http\Controllers\User\PasswordSetupController;
 use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
@@ -24,6 +27,10 @@ Route::get('healthcheck', [SystemController::class, 'healthCheck'])->name('syste
 Route::post('login', [AuthController::class, 'login'])->name('auth.login');
 Route::post('setup-password/{id}/{hash}', [PasswordSetupController::class, 'setup'])->name('password.setup');
 
+Route::post('uploads', [UploadController::class, 'store'])->name('uploads.store');
+
+
+
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('user', [AuthController::class, 'currentUser'])->name('auth.user');
     Route::post('logout', [AuthController::class, 'logout'])->name('auth.logout');
@@ -36,5 +43,21 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::delete('{user}', 'destroy');
         Route::get('/form/data', 'form');
     });
+
+    Route::prefix('complaints')->name('complaints.')->controller(ComplaintController::class)->group(function () {
+        Route::get('', 'index');
+        Route::get('{complaint}', 'show');
+        Route::post('', 'store');
+        Route::put('{complaint}', 'update');
+    });
+
+    Route::prefix('articles')->name('articles.')->controller(ArticleController::class)->group(function () {
+        Route::get('', 'index');
+        Route::get('{article}', 'show');
+        Route::post('', 'store');
+        Route::put('{article}', 'update');
+        Route::delete('{article}', 'destroy');
+    });
+
 });
 

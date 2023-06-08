@@ -44,25 +44,23 @@ return new class extends Migration
             $table->id();
             $table->string('register_number')->nullable();
             $table->string('victim');
-            $table->string('complaint_type');
+            $table->string('type');
             $table->string('name')->nullable();
             $table->foreignId('location_id')->nullable()->constrained('locations');
             $table->string('location_name')->nullable();
 
             $table->foreignId('location_to_id')->nullable()->constrained('locations');
             $table->string('location_to_name')->nullable();
-            $table->string('has_proof')->nullable();
+            $table->string('location_to_type')->nullable();
+            $table->json('details')->nullable();
+            $table->text('reason')->nullable();
+            $table->string('proof_type')->nullable();
+
+            $table->string('lat')->nullable();
+            $table->string('lng')->nullable();
 
             $table->timestamps();
             $table->softDeletes();
-        });
-
-        Schema::create('complaint_details', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('complaint_id')->nullable()->constrained('complaints');
-            $table->string('type');
-            $table->text('description');
-            $table->timestamps();
         });
 
         Schema::create('complaint_uploads', function (Blueprint $table) {
@@ -83,7 +81,6 @@ return new class extends Migration
         Schema::dropIfExists('locations');
         Schema::dropIfExists('uploads');
         Schema::dropIfExists('complaints');
-        Schema::dropIfExists('complaint_details');
         Schema::dropIfExists('complaint_uploads');
     }
 };

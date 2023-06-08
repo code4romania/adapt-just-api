@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests\Complaint;
 
+use App\Constants\ComplaintConstant;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class StoreComplaintRequest extends FormRequest
 {
@@ -21,8 +23,149 @@ class StoreComplaintRequest extends FormRequest
      */
     public function rules(): array
     {
+        $victim = $this->get('victim', null);
+        $type   = $this->get('type', null);
+
+        if ($victim == ComplaintConstant::VICTIM_ME) {
+            switch ($type) {
+                case ComplaintConstant::TYPE_HURT:
+                    return $this->meHurtRules();
+                case ComplaintConstant::TYPE_MOVE:
+                    return $this->meMoveRules();
+                case ComplaintConstant::TYPE_EVALUATION:
+            }
+        } else {
+            return $this->otherRules();
+        }
+    }
+
+    protected function meHurtRules() {
         return [
-            //
+            'victim' => [
+                'required',
+                Rule::in(ComplaintConstant::victims())
+            ],
+            'type' => [
+                'required',
+                Rule::in(ComplaintConstant::types())
+            ],
+            'name' => [
+                'required',
+                'max:255'
+            ],
+            'location_id' => [
+                Rule::requiredIf(!$this->get('location_name'))
+            ],
+            'location_name' => [
+                Rule::requiredIf(!$this->get('location_id'))
+            ],
+            'details' => [
+                'required',
+                'array'
+            ],
+            'reason' => [
+                Rule::requiredIf(in_array(ComplaintConstant::DETAIL_OTHER, $this->get('details', [])))
+            ],
+            'proof_type' => [
+                'required',
+                Rule::in(ComplaintConstant::proofTypes())
+            ],
+            'uploads' => [
+                Rule::requiredIf($this->get('proof_type') == ComplaintConstant::PROOF_TYPE_YES),
+                'array'
+            ]
+        ];
+    }
+
+    protected function meMoveRules()
+    {
+        return [
+            'victim' => [
+                'required',
+                Rule::in(ComplaintConstant::victims())
+            ],
+            'type' => [
+                'required',
+                Rule::in(ComplaintConstant::types())
+            ],
+            'name' => [
+                'required',
+                'max:255'
+            ],
+            'location_id' => [
+                Rule::requiredIf(!$this->get('location_name'))
+            ],
+            'location_name' => [
+                Rule::requiredIf(!$this->get('location_id'))
+            ],
+            'location_to_id' => [
+                Rule::requiredIf(!$this->get('location_to_name'))
+            ],
+            'location_to_name' => [
+                Rule::requiredIf(!$this->get('location_to_id'))
+            ],
+            'reason' => [
+                'required'
+            ]
+        ];
+    }
+
+    protected function meEvaluationRules()
+    {
+        return [
+            'victim' => [
+                'required',
+                Rule::in(ComplaintConstant::victims())
+            ],
+            'type' => [
+                'required',
+                Rule::in(ComplaintConstant::types())
+            ],
+            'name' => [
+                'required',
+                'max:255'
+            ],
+            'location_id' => [
+                Rule::requiredIf(!$this->get('location_name'))
+            ],
+            'location_name' => [
+                Rule::requiredIf(!$this->get('location_id'))
+            ]
+        ];
+    }
+
+    protected function otherRules()
+    {
+        return [
+            'victim' => [
+                'required',
+                Rule::in(ComplaintConstant::victims())
+            ],
+            'type' => [
+                'required',
+                Rule::in(ComplaintConstant::types())
+            ],
+            'name' => [
+                'required',
+                'max:255'
+            ],
+            'location_id' => [
+                Rule::requiredIf(!$this->get('location_name'))
+            ],
+            'location_name' => [
+                Rule::requiredIf(!$this->get('location_id'))
+            ],
+            'reason' => [
+                'required'
+            ],
+            'proof_type' => [
+                'required',
+                Rule::in(ComplaintConstant::proofTypes())
+            ],
+            'uploads' => [
+                Rule::requiredIf($this->get('proof_type') == ComplaintConstant::PROOF_TYPE_YES),
+                'array'
+            ]
         ];
     }
 }

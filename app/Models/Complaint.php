@@ -4,7 +4,6 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Complaint extends Model
 {
@@ -16,13 +15,22 @@ class Complaint extends Model
     protected $fillable = [
         'register_number',
         'victim',
-        'complaint_type',
+        'type',
         'name',
         'location_id',
         'location_name',
         'location_to_id',
         'location_to_name',
-        'has_proof',
+        'location_to_type',
+        'details',
+        'reason',
+        'proof_type',
+        'lat',
+        'lng'
+    ];
+
+    protected $casts = [
+        'details' => 'array'
     ];
 
     /**
@@ -33,11 +41,4 @@ class Complaint extends Model
         return $this->belongsToMany(Upload::class, 'complaint_uploads');
     }
 
-    /**
-     * @return HasMany
-     */
-    public function details(): HasMany
-    {
-        return $this->hasMany(ComplaintDetail::class);
-    }
 }

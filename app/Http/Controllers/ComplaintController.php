@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Complaint\StoreComplaintRequest;
+use App\Http\Requests\Complaint\UpdateComplaintRequest;
 use App\Http\Requests\User\StoreUserRequest;
 use App\Http\Requests\User\UpdateUserRequest;
+use App\Http\Resources\Complaint\ComplaintResource;
 use App\Http\Resources\User\UserResource;
 use App\Models\Complaint;
 use App\Models\Permission;
@@ -25,9 +27,9 @@ class ComplaintController extends Controller
     public function index(): AnonymousResourceCollection
     {
         $this->authorize('viewAny', Complaint::class);
-        $users = ComplaintService::complaints();
+        $complaints = ComplaintService::complaints();
 
-        return UserResource::collection($users);
+        return ComplaintResource::collection($complaints);
     }
 
     /**
@@ -35,22 +37,21 @@ class ComplaintController extends Controller
      */
     public function store(StoreComplaintRequest $request): JsonResponse
     {
-        $this->authorize('create', Complaint::class);
-        UserService::create($request->validated());
+        ComplaintService::create($request->validated());
 
-        return $this->sendSuccess('The user has been successfully created.');
+        return $this->sendSuccess('Sesizare a fost inregistrata cu succes.');
     }
 
     /**
      * Update the specified resource in storage.
      * @throws AuthorizationException
      */
-    public function update(UpdateUserRequest $request, User $user): JsonResponse
+    public function update(UpdateComplaintRequest $request, Complaint $complaint): JsonResponse
     {
-        $this->authorize('update', User::class);
-        UserService::update($request->validated(), $user->id);
+        $this->authorize('update', Complaint::class);
+        ComplaintService::update($request->validated(), $complaint->id);
 
-        return $this->sendSuccess('The user has been successfully updated.');
+        return $this->sendSuccess('Sesizarea a fost actualizata cu succes.');
     }
 
     /**
@@ -58,35 +59,12 @@ class ComplaintController extends Controller
      *
      * @throws AuthorizationException
      */
-    public function show(User $user): UserResource
+    public function show(Complaint $complaint): ComplaintResource
     {
-        $this->authorize('view', User::class);
+        $this->authorize('view', Complaint::class);
 
-        return new UserResource($user);
+        return new ComplaintResource($complaint);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @throws AuthorizationException
-     */
-    public function destroy(User $user): JsonResponse
-    {
-        $this->authorize('delete', [User::class, $user]);
-        UserService::delete($user);
 
-        return $this->sendSuccess('The user has been successfully deleted.');
-    }
-
-    /**
-     * @throws AuthorizationException
-     */
-    public function form( Request $request): JsonResponse
-    {
-        $this->authorize('create', User::class);
-
-        return new JsonResponse([
-            'permissions'       => Permission::all(),
-        ]);
-    }
 }

@@ -7,13 +7,14 @@ use App\Models\User;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Arr;
 use Spatie\QueryBuilder\QueryBuilder;
 
 class ComplaintService
 {
     public static function complaints($perPage = 10): LengthAwarePaginator
     {
-        return QueryBuilder::for(User::class)
+        return QueryBuilder::for(Complaint::class)
             ->allowedSorts(['id', 'register_number', 'location_name'])
             ->allowedFilters([])
             ->paginate($perPage);
@@ -21,7 +22,10 @@ class ComplaintService
 
     public static function create($data): Model|Builder
     {
-        $complaint = ComplaintService::create($data);
+        $complaint = Complaint::query()->create($data);
+        $uploads = Arr::get($data,'uploads', []);
+        $complaint->uploads()->sync($uploads);
+
         return $complaint;
     }
 

@@ -2,7 +2,6 @@
 
 namespace App\Policies;
 
-use App\Models\Complaint;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Illuminate\Auth\Access\Response;
@@ -35,11 +34,4 @@ class ComplaintPolicy
         return $user->hasPermissionTo('Update - complaints');
     }
 
-    /**
-     * Determine whether the user can delete the model.
-     */
-    public function delete(User $user, Complaint $complaint): Response|bool
-    {
-        return $user->hasPermissionTo('Delete - complaints');
-    }
 }
