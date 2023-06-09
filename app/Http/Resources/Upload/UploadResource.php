@@ -23,7 +23,7 @@ class UploadResource extends JsonResource
             'size' => $this->size,
             'path' => $this->path,
             'extension' => $this->extension,
-            'dataUrl' => url(Storage::disk()->url($this->path)),
+            'dataUrl' => Storage::disk()->temporaryUrl($this->path, now()->addDay(2)),
         ];
     }
 }

@@ -12,6 +12,7 @@ use App\Services\UploadService;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 
 /**
@@ -41,8 +42,9 @@ class UploadController extends Controller
     protected function store(StoreUploadRequest $request): UploadResource
     {
 
+
         $file = $request->file('file');
-        $path = Storage::disk()->put('temp', $file);
+        $path = Storage::disk('s3')->putFile('temp', $file);
 
         $input = [
             'extension' => $file->extension(),
