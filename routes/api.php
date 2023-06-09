@@ -3,6 +3,7 @@
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ComplaintController;
+use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\SystemController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\User\PasswordSetupController;
@@ -57,6 +58,14 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::post('', 'store');
         Route::put('{article}', 'update');
         Route::delete('{article}', 'destroy');
+    });
+
+    Route::prefix('resources')->name('resources.')->controller(ResourceController::class)->group(function () {
+        Route::get('', 'index');
+        Route::get('{resource}', 'show');
+        Route::post('', 'store');
+        Route::put('{resource}', 'update');
+        Route::delete('{resource}', 'destroy');
     });
 
 });

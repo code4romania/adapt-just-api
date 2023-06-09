@@ -29,7 +29,7 @@ class ArticleController extends Controller
     public function store(StoreOrUpdateArticleRequest $request): JsonResponse
     {
         $this->authorize('create', Article::class);
-        Article::create($request->validated());
+        ArticleService::create($request->validated());
 
         return $this->sendSuccess('Articolul a fost creat cu succes.');
     }

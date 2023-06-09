@@ -1,13 +1,11 @@
 <?php
 
-namespace App\Http\Requests\Upload;
+namespace App\Http\Requests\Resource;
 
-use App\Models\User;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 
-class StoreUploadRequest extends FormRequest
+class StoreOrUpdateResourceRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,6 +22,14 @@ class StoreUploadRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [];
+        return [
+            'name' => 'required',
+            'status' => 'required',
+            'type' => 'required',
+            'phone' => ['sometimes'],
+            'content' => ['sometimes'],
+            'short_content' => ['sometimes'],
+            'upload_id' => ['sometimes']
+        ];
     }
 }
