@@ -42,7 +42,6 @@ class UploadController extends Controller
     protected function store(StoreUploadRequest $request): UploadResource
     {
 
-
         $file = $request->file('file');
         $path = Storage::disk('s3')->putFile('temp', $file);
 

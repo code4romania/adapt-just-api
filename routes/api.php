@@ -30,7 +30,9 @@ Route::post('setup-password/{id}/{hash}', [PasswordSetupController::class, 'setu
 
 Route::post('uploads', [UploadController::class, 'store'])->name('uploads.store');
 
-
+Route::prefix('complaints')->name('complaints.')->controller(ComplaintController::class)->group(function () {
+    Route::post('', 'store');
+});
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('user', [AuthController::class, 'currentUser'])->name('auth.user');
@@ -48,7 +50,6 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::prefix('complaints')->name('complaints.')->controller(ComplaintController::class)->group(function () {
         Route::get('', 'index');
         Route::get('{complaint}', 'show');
-        Route::post('', 'store');
         Route::put('{complaint}', 'update');
     });
 
