@@ -6,9 +6,12 @@ use App\Http\Requests\Article\StoreOrUpdateArticleRequest;
 use App\Http\Resources\Article\ArticleResource;
 use App\Models\Article;
 use App\Services\ArticleService;
+use App\Services\UploadService;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Log;
 
 class ArticleController extends Controller
 {
@@ -41,7 +44,11 @@ class ArticleController extends Controller
     public function update(StoreOrUpdateArticleRequest $request, Article $article): JsonResponse
     {
         $this->authorize('update', Article::class);
-        ArticleService::update($request->validated(), $article->id);
+
+        $inputs = $request->validated();
+        $inputs['content'] = UploadService::parseHtmlContent(Arr::get($inputs, 'content', ''));
+
+        ArticleService::update($inputs, $article->id);
 
         return $this->sendSuccess('Articolul a fost actualizat cu succes.');
     }

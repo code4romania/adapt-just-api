@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('status')->default(ArticleConstant::STATUS_DRAFT);
             $table->foreignId('upload_id')->nullable()->constrained('uploads');
-            $table->text('content')->nullable();
+            $table->longText('content')->nullable();
             $table->text('short_content')->nullable();
             $table->datetime('published_at')->nullable();
             $table->timestamps();

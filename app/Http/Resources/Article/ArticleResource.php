@@ -4,9 +4,11 @@ namespace App\Http\Resources\Article;
 
 use App\Constants\ResourceConstant;
 use App\Http\Resources\Upload\UploadResource;
+use App\Services\UploadService;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Arr;
 
 class ArticleResource extends JsonResource
 {
@@ -22,7 +24,7 @@ class ArticleResource extends JsonResource
             'type' => $this->type,
             'name' => $this->name,
             'status' => $this->status,
-            'content' => $this->content,
+            'content' => UploadService::parseHtmlContent($this->content),
             'short_content' => $this->short_content,
             'upload_id' => $this->upload_id,
             'upload' => $this->upload_id ? new UploadResource($this->upload) : null,
