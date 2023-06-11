@@ -1,0 +1,80 @@
+[
+    {
+        "type" : "centru",
+        "name" : "CENTRUL SF. ANA",
+        "label" : "CENTRUL SF. ANA",
+        "email" : "catalin.iacob@web-group.ro",
+        "county_iso" : "BC",
+        "county_name" : "BACAU",
+        "county_label" : "BACĂU",
+        "city_name" : "BACAU",
+        "city_label" : "BACĂU",
+        "lat" : "",
+        "lng" : ""
+    },
+    {
+        "type" : "centru",
+        "name" : "CENTRUL SF. ANDREI",
+        "label" : "CENTRUL SF. ANDREI",
+        "email" : "catalin.iacob@web-group.ro",
+        "county_iso" : "B",
+        "county_name" : "BUCUREȘTI",
+        "county_label" : "BUCUREȘTI",
+        "city_name" : "BUCURESTI",
+        "city_label" : "BUCUREȘTI",
+        "lat" : "",
+        "lng" : ""
+    },
+    {
+        "type" : "centru",
+        "name" : "CENTRUL FLOAREA SPERANȚEI",
+        "label" : "CENTRUL FLOAREA SPERANȚEI",
+        "email" : "catalin.iacob@web-group.ro",
+        "county_iso" : "SM",
+        "county_name" : "SATU MARE",
+        "county_label" : "SATU MARE",
+        "city_name" : "SATU MARE",
+        "city_label" : "SATU MARE",
+        "lat" : "",
+        "lng" : ""
+    },
+    {
+        "type" : "centru",
+        "name" : "CENTRUL SF. ANA",
+        "label" : "CENTRUL SF. ANA",
+        "email" : "catalin.iacob@web-group.ro",
+        "county_iso" : "SM",
+        "county_name" : "SATU MARE",
+        "county_label" : "SATU MARE",
+        "city_name" : "SATU MARE",
+        "city_label" : "SATU MARE",
+        "lat" : "",
+        "lng" : ""
+    },
+    {
+        "type" : "centru",
+        "name" : "CENTRUL SF. ANDREI",
+        "label" : "CENTRUL SF. ANDREI",
+        "email" : "catalin.iacob@web-group.ro",
+        "county_iso" : "SM",
+        "county_name" : "SATU MARE",
+        "county_label" : "SATU MARE",
+        "city_name" : "SATU MARE",
+        "city_label" : "SATU MARE",
+        "lat" : "",
+        "lng" : ""
+    },
+    {
+        "type" : "centru",
+        "name" : "CENTRUL SF. ELENA",
+        "label" : "CENTRUL SF. ELENA",
+        "email" : "catalin.iacob@web-group.ro",
+        "county_iso" : "SM",
+        "county_name" : "SATU MARE",
+        "county_label" : "SATU MARE",
+        "city_name" : "SATU MARE",
+        "city_label" : "SATU MARE",
+        "lat" : "",
+        "lng" : ""
+    }
+]

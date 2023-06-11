@@ -39,7 +39,8 @@ class StoreComplaintRequest extends FormRequest
         }
     }
 
-    protected function meHurtRules() {
+    protected function meHurtRules()
+    {
         return [
             'victim' => [
                 'required',
@@ -54,10 +55,10 @@ class StoreComplaintRequest extends FormRequest
                 'max:255'
             ],
             'location_id' => [
-                Rule::requiredIf(!$this->get('location_name'))
+                'sometimes'
             ],
             'location_name' => [
-                Rule::requiredIf(!$this->get('location_id'))
+                'sometimes'
             ],
             'details' => [
                 'required',
@@ -93,16 +94,20 @@ class StoreComplaintRequest extends FormRequest
                 'max:255'
             ],
             'location_id' => [
-                Rule::requiredIf(!$this->get('location_name'))
+                'sometimes',
+                'integer'
             ],
             'location_name' => [
-                Rule::requiredIf(!$this->get('location_id'))
+                'sometimes'
             ],
             'location_to_id' => [
-                Rule::requiredIf(!$this->get('location_to_name'))
+                'sometimes',
             ],
             'location_to_name' => [
-                Rule::requiredIf(!$this->get('location_to_id'))
+                'sometimes',
+            ],
+            'location_to_type' => [
+                'sometimes'
             ],
             'reason' => [
                 'required'
@@ -126,10 +131,10 @@ class StoreComplaintRequest extends FormRequest
                 'max:255'
             ],
             'location_id' => [
-                Rule::requiredIf(!$this->get('location_name'))
+                'sometimes'
             ],
             'location_name' => [
-                Rule::requiredIf(!$this->get('location_id'))
+                'sometimes'
             ]
         ];
     }

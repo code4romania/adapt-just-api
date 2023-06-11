@@ -20,6 +20,9 @@ class UploadService
 
     public static function parseHtmlContent($html) {
 
+        if (!trim($html)) {
+            return '';
+        }
         $doc = new \DOMDocument();
         $doc->loadHTML($html);
         $xml = simplexml_import_dom($doc);

@@ -15,7 +15,7 @@ class ComplaintService
     public static function complaints($perPage = 10): LengthAwarePaginator
     {
         return QueryBuilder::for(Complaint::class)
-            ->allowedSorts(['id', 'register_number', 'location_name'])
+            ->allowedSorts(['id', 'created_at', 'name', 'city'])
             ->allowedFilters([])
             ->paginate($perPage);
     }

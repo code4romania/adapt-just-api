@@ -3,6 +3,7 @@
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ComplaintController;
+use App\Http\Controllers\LocationController;
 use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\SystemController;
 use App\Http\Controllers\UploadController;
@@ -30,9 +31,15 @@ Route::post('setup-password/{id}/{hash}', [PasswordSetupController::class, 'setu
 
 Route::post('uploads', [UploadController::class, 'store'])->name('uploads.store');
 
+
 Route::prefix('complaints')->name('complaints.')->controller(ComplaintController::class)->group(function () {
     Route::post('', 'store');
 });
+
+Route::prefix('public')->name('public.')->group(function () {
+    Route::get('locations', [LocationController::class, 'index'])->name('locations.index');
+});
+
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('user', [AuthController::class, 'currentUser'])->name('auth.user');
