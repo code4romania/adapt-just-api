@@ -2,6 +2,7 @@
 
 namespace App\Http\Resources\Complaint;
 
+use App\Constants\ComplaintConstant;
 use App\Http\Resources\Upload\UploadResource;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
@@ -19,6 +20,7 @@ class ComplaintResource extends JsonResource
             'id' => $this->id,
             'victim' => $this->victim,
             'type' => $this->type,
+            'type_label' => ComplaintConstant::typeLabels()[$this->type],
             'name' => $this->name,
             'location_id' => $this->location_id,
             'location_name' => $this->location_name,

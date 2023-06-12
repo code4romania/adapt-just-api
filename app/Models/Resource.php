@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Constants\ResourceConstant;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -36,6 +37,11 @@ class Resource extends Model
     public function upload(): BelongsTo
     {
         return $this->belongsTo(Upload::class);
+    }
+
+    public function isActive()
+    {
+        return $this->status == ResourceConstant::STATUS_PUBLISHED;
     }
 
 }

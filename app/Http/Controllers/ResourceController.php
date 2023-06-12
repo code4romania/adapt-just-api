@@ -22,9 +22,9 @@ class ResourceController extends Controller
     public function index(): AnonymousResourceCollection
     {
         $this->authorize('viewAny', Resource::class);
-        $articles = ResourceService::resources();
+        $resources = ResourceService::resources();
 
-        return ArticleResource::collection($articles);
+        return ResourceResource::collection($resources);
     }
 
     /**

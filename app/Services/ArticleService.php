@@ -30,7 +30,6 @@ class ArticleService
     public static function create($data): Model|Builder
     {
         $data['published_at'] = Arr::get($data,'status') == ArticleConstant::STATUS_DRAFT ? null : Carbon::now();
-
         return Article::create($data);
     }
 

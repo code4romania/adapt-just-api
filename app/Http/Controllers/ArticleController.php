@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\Article\StoreOrUpdateArticleRequest;
+use App\Http\Resources\Article\ArticlePublicResource;
 use App\Http\Resources\Article\ArticleResource;
 use App\Models\Article;
 use App\Services\ArticleService;
@@ -11,7 +12,6 @@ use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\Log;
 
 class ArticleController extends Controller
 {
@@ -32,7 +32,10 @@ class ArticleController extends Controller
     public function store(StoreOrUpdateArticleRequest $request): JsonResponse
     {
         $this->authorize('create', Article::class);
-        ArticleService::create($request->validated());
+        $inputs = $request->validated();
+        $inputs['content'] = UploadService::parseHtmlContent(Arr::get($inputs, 'content', ''));
+
+        ArticleService::create($inputs);
 
         return $this->sendSuccess('Articolul a fost creat cu succes.');
     }
@@ -77,4 +80,5 @@ class ArticleController extends Controller
 
         return $this->sendSuccess('Articolul a fost sters cu succes.');
     }
+
 }

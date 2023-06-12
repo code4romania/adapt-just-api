@@ -4,6 +4,8 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ComplaintController;
 use App\Http\Controllers\LocationController;
+use App\Http\Controllers\Public\ArticlePublicController;
+use App\Http\Controllers\Public\ResourcePublicController;
 use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\SystemController;
 use App\Http\Controllers\UploadController;
@@ -38,6 +40,14 @@ Route::prefix('complaints')->name('complaints.')->controller(ComplaintController
 
 Route::prefix('public')->name('public.')->group(function () {
     Route::get('locations', [LocationController::class, 'index'])->name('locations.index');
+    Route::prefix('articles')->name('articles.')->controller(ArticlePublicController::class)->group(function () {
+        Route::get('', 'index');
+        Route::get('{article}', 'show');
+    });
+    Route::prefix('resources')->name('resources.')->controller(ResourcePublicController::class)->group(function () {
+        Route::get('{type}', 'index');
+        Route::get('{article}/show', 'show');
+    });
 });
 
 

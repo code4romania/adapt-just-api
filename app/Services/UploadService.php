@@ -20,16 +20,10 @@ class UploadService
 
     public static function parseHtmlContent($html) {
 
-        if (!trim($html)) {
-            return '';
-        }
-        $doc = new \DOMDocument();
-        $doc->loadHTML($html);
-        $xml = simplexml_import_dom($doc);
-        $images = $xml->xpath('//img');
-
-        foreach ($images as $image) {
-            $imagePath = $image['src'];
+        preg_match_all('/<img[^>]+>/i',$html, $imgTags);
+        for ($i = 0; $i < count($imgTags[0]); $i++) {
+            preg_match('/src="([^"]+)/i',$imgTags[0][$i], $imgage);
+            $imagePath = str_ireplace( 'src="', '',  $imgage[0]);
             $imagePathExploded = parse_url($imagePath);
 
             if (!empty($imagePathExploded['path'])) {
@@ -40,13 +34,14 @@ class UploadService
                 if ($upload) {
                     self::setUploadPath($upload, 'articles');
                     $upload->refresh();
-                    $image['src'] = Storage::disk('s3')->temporaryUrl($upload->path, now()->addDay(2));
+                    $imageNewPath = Storage::disk('s3')->temporaryUrl($upload->path, now()->addDay(2));
+                    $html = str_replace($imagePath, $imageNewPath, $html);
                 }
 
             }
         }
 
-       return $xml->asXML();
+        return $html;
     }
 
 

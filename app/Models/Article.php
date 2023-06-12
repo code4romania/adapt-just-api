@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Constants\ArticleConstant;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -34,6 +35,11 @@ class Article extends Model
     public function upload(): BelongsTo
     {
         return $this->belongsTo(Upload::class);
+    }
+
+    public function isActive()
+    {
+        return $this->status == ArticleConstant::STATUS_PUBLISHED;
     }
 
 }

@@ -39,7 +39,7 @@ class ComplaintController extends Controller
     {
         ComplaintService::create($request->validated());
 
-        return $this->sendSuccess('Sesizare a fost inregistrata cu succes.');
+        return $this->sendSuccess('Sesizarea a fost inregistrata cu succes.');
     }
 
     /**

@@ -39,6 +39,14 @@ final class ComplaintConstant
         ];
     }
 
+    public static function typeLabels() {
+        return [
+            self::TYPE_HURT => 'Abuz',
+            self::TYPE_MOVE => 'Cerere de relocare',
+            self::TYPE_EVALUATION => 'Cerere de reexaminare'
+        ];
+    }
+
     public static function details(): array
     {
         return [

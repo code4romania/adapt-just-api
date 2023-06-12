@@ -13,7 +13,7 @@ class LocationController extends Controller
      */
     public function index(): AnonymousResourceCollection
     {
-        $locations = LocationService::locations();
+        $locations = LocationService::locations()->get();
         return LocationResource::collection($locations);
     }
 
