@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('type')->nullable();
             $table->string('name');
             $table->string('label');
-            $table->string('email');
+            $table->string('email')->nullable();
             $table->string('county_iso')->nullable();
             $table->string('county_name')->nullable();
             $table->string('county_label')->nullable();
