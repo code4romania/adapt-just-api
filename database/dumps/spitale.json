@@ -1,0 +1,762 @@
+[
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Judetean de Urgenta Alba Iulia",
+    "Adrese de email": "spjudalba@gmail.com",
+    "COD ISO Judet": "AB",
+    "Nume judet": "Alba",
+    "Nume localitate": "Alba Iulia",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Compartiment Psihiatrie Cronici Baia de Aries",
+    "Adrese de email": "spjudalba@gmail.com",
+    "COD ISO Judet": "AB",
+    "Nume judet": "Alba",
+    "Nume localitate": "Baia de Aries",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Clinic Judetean de Urgenta Arad",
+    "Adrese de email": "secretariat@scjarad.ro",
+    "COD ISO Judet": "AR",
+    "Nume judet": "Arad",
+    "Nume localitate": "Arad",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Mocrea",
+    "Adrese de email": "psihiatrie@spitalmocrea.ro;medical@spitalmocrea.ro",
+    "COD ISO Judet": "AR",
+    "Nume judet": "Arad",
+    "Nume localitate": "Mocrea",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Căpâlnaș",
+    "Adrese de email": "secretariat@spitalulcapalnas.ro",
+    "COD ISO Judet": "AR",
+    "Nume judet": "Arad",
+    "Nume localitate": "Căpâlnaş",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie ” Sf.Maria” Vedea",
+    "Adrese de email": "secretariat@spitalvedea.ro",
+    "COD ISO Judet": "AG",
+    "Nume judet": "Arges",
+    "Nume localitate": "Vedea",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Clinic de Pshiatrie prof. Dr. Alexandru Obregia",
+    "Adrese de email": "",
+    "COD ISO Judet": "B",
+    "Nume judet": "București",
+    "Nume localitate": "București",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Centrul de Evaluare si tratament al toxicodependentilor tineri Sf. Stelian",
+    "Adrese de email": "",
+    "COD ISO Judet": "B",
+    "Nume judet": "București",
+    "Nume localitate": "București",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Titan \"Dr. Constantin Gorgos",
+    "Adrese de email": "",
+    "COD ISO Judet": "B",
+    "Nume judet": "București",
+    "Nume localitate": "București",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Judetean de Urgenta Bacau",
+    "Adrese de email": "info@sjubc.ro",
+    "COD ISO Judet": "BC",
+    "Nume judet": "Bacău",
+    "Nume localitate": "Bacău",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Clinic Municipal Dr. Gavril Curteanu Oradea",
+    "Adrese de email": "",
+    "COD ISO Judet": "BH",
+    "Nume judet": "Bihor",
+    "Nume localitate": "Oradea",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Neurologie și Psihiatrie Oradea",
+    "Adrese de email": "",
+    "COD ISO Judet": "BH",
+    "Nume judet": "Bihor",
+    "Nume localitate": "Oradea",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie și Măsuri de siguranță Ștei",
+    "Adrese de email": "psihiatrie.stei@yahoo.com;secretariat@hpsihiatriestei.ro",
+    "COD ISO Judet": "BH",
+    "Nume judet": "Bihor",
+    "Nume localitate": "Ștei",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Nucet",
+    "Adrese de email": "spnucet@yahoo.com",
+    "COD ISO Judet": "BH",
+    "Nume judet": "Bihor",
+    "Nume localitate": "Nucet",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Orasenesc Beclean",
+    "Adrese de email": "",
+    "COD ISO Judet": "BN",
+    "Nume judet": "Bistrița-Năsăud",
+    "Nume localitate": "Beclean",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Județean de Urgență Bistrița",
+    "Adrese de email": "",
+    "COD ISO Judet": "BN",
+    "Nume judet": "Bistrița-Năsăud",
+    "Nume localitate": "Bistrița",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie \"Sf. Pantelimon\" Braila",
+    "Adrese de email": "",
+    "COD ISO Judet": "BR",
+    "Nume judet": "Brăila",
+    "Nume localitate": "Brăila",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Judetean de Urgenta Mavromati Botosani",
+    "Adrese de email": "",
+    "COD ISO Judet": "BT",
+    "Nume judet": "Botoșani",
+    "Nume localitate": "Botoșani",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Sanatoriul de Neuropsihiatrie Podriga",
+    "Adrese de email": "",
+    "COD ISO Judet": "BT",
+    "Nume judet": "Botoșani",
+    "Nume localitate": "Podriga",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalului Clinic de Psihiatrie și Neurologie Brașov",
+    "Adrese de email": "",
+    "COD ISO Judet": "BV",
+    "Nume judet": "Brașov",
+    "Nume localitate": "Brașov",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Secție Psihiatrie cronici – Zarnesti",
+    "Adrese de email": "",
+    "COD ISO Judet": "BV",
+    "Nume judet": "Brașov",
+    "Nume localitate": "Zărnești",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Secție Psihiatrie cronici – Vulcan",
+    "Adrese de email": "",
+    "COD ISO Judet": "BV",
+    "Nume judet": "Brașov",
+    "Nume localitate": "Vulcan",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Sanatoriul de Nevroze Predeal",
+    "Adrese de email": "",
+    "COD ISO Judet": "BV",
+    "Nume judet": "Brașov",
+    "Nume localitate": "Predeal",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie și pentru Măsuri de Siguranță Săpoca",
+    "Adrese de email": "",
+    "COD ISO Judet": "BZ",
+    "Nume judet": "Buzău",
+    "Nume localitate": "Săpoca",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Sapunari",
+    "Adrese de email": "",
+    "COD ISO Judet": "CL",
+    "Nume judet": "Călărași",
+    "Nume localitate": "Săpunari",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Clinic Judetean de Urgenta Cluj-Napoca",
+    "Adrese de email": "",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Cluj-Napoca",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Boli Psihice Cronice Borșa",
+    "Adrese de email": "",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Borșa",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul municipal Dej",
+    "Adrese de email": "",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Dej",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Sp Clinic Judetean de urgenta Constanta – sectia clinica exterioara Palazu Mare",
+    "Adrese de email": "",
+    "COD ISO Judet": "CT",
+    "Nume judet": "Constanța",
+    "Nume localitate": "Constanța",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Sp Judetean de Urgenta DR. Fogolyan Kristor Sf. Gheorghe",
+    "Adrese de email": "",
+    "COD ISO Judet": "CS",
+    "Nume judet": "Covasna",
+    "Nume localitate": "Sfântul Gheorghe",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Secția Psihiatrie Cronici Gura Ocniței",
+    "Adrese de email": "",
+    "COD ISO Judet": "DB",
+    "Nume judet": "Dâmbovița",
+    "Nume localitate": "Gura Ocniței",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Judetean de Urgenta Targoviste",
+    "Adrese de email": "",
+    "COD ISO Judet": "DB",
+    "Nume judet": "Dâmbovița",
+    "Nume localitate": "Târgoviște",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Poiana Mare",
+    "Adrese de email": "",
+    "COD ISO Judet": "DJ",
+    "Nume judet": "Dolj",
+    "Nume localitate": "Poiana Mare",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Clinic de Neuropsihiatrie Craiova",
+    "Adrese de email": "",
+    "COD ISO Judet": "DJ",
+    "Nume judet": "Dolj",
+    "Nume localitate": "Craiova",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Secția exterioară Psihiatrie Cronici Melinești",
+    "Adrese de email": "",
+    "COD ISO Judet": "DJ",
+    "Nume judet": "Dolj",
+    "Nume localitate": "Melinești",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Judetean de Urgenta Targu Jiu",
+    "Adrese de email": "",
+    "COD ISO Judet": "GJ",
+    "Nume judet": "Gorj",
+    "Nume localitate": "Târgu Jiu",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Elisabeta Doamna Galati",
+    "Adrese de email": "",
+    "COD ISO Judet": "GL",
+    "Nume judet": "Galați",
+    "Nume localitate": "Galați",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Județean Giurgiu",
+    "Adrese de email": "",
+    "COD ISO Judet": "GR",
+    "Nume judet": "Giurgiu",
+    "Nume localitate": "Giurgiu",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Secția Exterioară Psihiatrie Vadu-Lat",
+    "Adrese de email": "",
+    "COD ISO Judet": "GR",
+    "Nume judet": "Giurgiu",
+    "Nume localitate": "Vadu-Lat",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Zam",
+    "Adrese de email": "",
+    "COD ISO Judet": "HD",
+    "Nume judet": "Hunedoara",
+    "Nume localitate": "Zam",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Tulgheş",
+    "Adrese de email": "",
+    "COD ISO Judet": "HR",
+    "Nume judet": "Harghita",
+    "Nume localitate": "Tulgheș",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie „Eftimie Diamandescu” (Bălăceanca)",
+    "Adrese de email": "",
+    "COD ISO Judet": "IF",
+    "Nume judet": "Ilfov",
+    "Nume localitate": "Bălăceanca",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Institutul de Psihiatrie „Socola”",
+    "Adrese de email": "",
+    "COD ISO Judet": "IS",
+    "Nume judet": "Iași",
+    "Nume localitate": "Socola",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Secţia Exterioară Şipote",
+    "Adrese de email": "",
+    "COD ISO Judet": "IS",
+    "Nume judet": "Iași",
+    "Nume localitate": "Șipote",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Secţia Exterioară Bârnova",
+    "Adrese de email": "",
+    "COD ISO Judet": "IS",
+    "Nume judet": "Iași",
+    "Nume localitate": "Bârnova",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie si pentru Masuri de Siguranta Padureni Grajduri",
+    "Adrese de email": "",
+    "COD ISO Judet": "IS",
+    "Nume judet": "Iași",
+    "Nume localitate": "Grajduri",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Sf. Nicolae Roman",
+    "Adrese de email": "",
+    "COD ISO Judet": "NT",
+    "Nume judet": "Neamț",
+    "Nume localitate": "Roman",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Cronici Schitu Greci",
+    "Adrese de email": "",
+    "COD ISO Judet": "OT",
+    "Nume judet": "Olt",
+    "Nume localitate": "Schitu-Greci",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Judetean de Urgenta Slatina",
+    "Adrese de email": "",
+    "COD ISO Judet": "OT",
+    "Nume judet": "Olt",
+    "Nume localitate": "Slatina",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Voila Campina",
+    "Adrese de email": "",
+    "COD ISO Judet": "PH",
+    "Nume judet": "Prahova",
+    "Nume localitate": "Câmpina",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Judetean de Urgenta Valcea",
+    "Adrese de email": "",
+    "COD ISO Judet": "VL",
+    "Nume judet": "Vâlcea",
+    "Nume localitate": "Râmnicu Vâlcea",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Drăgoești",
+    "Adrese de email": "",
+    "COD ISO Judet": "VL",
+    "Nume judet": "Vâlcea",
+    "Nume localitate": "Drăgoeşti",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Municipal Costache Nicolescu Dragasani",
+    "Adrese de email": "",
+    "COD ISO Judet": "VL",
+    "Nume judet": "Vâlcea",
+    "Nume localitate": "Drăgășani",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Municipal de Urgenta Vaslui",
+    "Adrese de email": "",
+    "COD ISO Judet": "VS",
+    "Nume judet": "Vaslui",
+    "Nume localitate": "Vaslui",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Murgeni",
+    "Adrese de email": "",
+    "COD ISO Judet": "VS",
+    "Nume judet": "Vaslui",
+    "Nume localitate": "Murgeni",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul De Psihiatrie Cronici Dumbrăveni",
+    "Adrese de email": "",
+    "COD ISO Judet": "VR",
+    "Nume judet": "Vrancea",
+    "Nume localitate": "Dumbrăveni",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Judetean Sf. Pantelimon Focsani",
+    "Adrese de email": "",
+    "COD ISO Judet": "VR",
+    "Nume judet": "Vrancea",
+    "Nume localitate": "Focșani",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Județean de Urgență Drobeta Turnu Severin",
+    "Adrese de email": "",
+    "COD ISO Judet": "MH",
+    "Nume judet": "Mehedinți",
+    "Nume localitate": "Drobeta Turnu Severin",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Cavnic",
+    "Adrese de email": "",
+    "COD ISO Judet": "MM",
+    "Nume judet": "Maramureș",
+    "Nume localitate": "Cavnic",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Municipal Sighetul Marmatiei",
+    "Adrese de email": "",
+    "COD ISO Judet": "MM",
+    "Nume judet": "Maramureș",
+    "Nume localitate": "Sighetu Marmației",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Judetean de Urgenta Piatra Neamt",
+    "Adrese de email": "",
+    "COD ISO Judet": "NT",
+    "Nume judet": "Neamț",
+    "Nume localitate": "Piatra Neamț",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Judetean de Urgenta Zalau",
+    "Adrese de email": "",
+    "COD ISO Judet": "SJ",
+    "Nume judet": "Sălaj",
+    "Nume localitate": "Zalău",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Judetean de Urgenta Satu Mare",
+    "Adrese de email": "",
+    "COD ISO Judet": "SM",
+    "Nume judet": "Satu Mare",
+    "Nume localitate": "Satu Mare",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Municipal Carei",
+    "Adrese de email": "",
+    "COD ISO Judet": "SM",
+    "Nume judet": "Satu Mare",
+    "Nume localitate": "Carei",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Clinic de Psihiatrie Dr. Gh. Preda Sibiu",
+    "Adrese de email": "",
+    "COD ISO Judet": "SB",
+    "Nume judet": "Sibiu",
+    "Nume localitate": "Sibiu",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Judetean de Urgenta Sf. Ioan cel Nou Suceava",
+    "Adrese de email": "",
+    "COD ISO Judet": "SV",
+    "Nume judet": "Suceava",
+    "Nume localitate": "Suceava",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Campulung Moldovenesc",
+    "Adrese de email": "",
+    "COD ISO Judet": "SV",
+    "Nume judet": "Suceava",
+    "Nume localitate": "Câmpulung Moldovenesc",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Cronici Siret",
+    "Adrese de email": "",
+    "COD ISO Judet": "SV",
+    "Nume judet": "Suceava",
+    "Nume localitate": "Siret",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Municipal Sf Doctori Cosma si Damian Radauti",
+    "Adrese de email": "",
+    "COD ISO Judet": "SV",
+    "Nume judet": "Suceava",
+    "Nume localitate": "Rădăuți",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Judetean de Urgenta Tulcea",
+    "Adrese de email": "",
+    "COD ISO Judet": "TL",
+    "Nume judet": "Tulcea",
+    "Nume localitate": "Tulcea",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Gătaia",
+    "Adrese de email": "",
+    "COD ISO Judet": "TM",
+    "Nume judet": "Timiș",
+    "Nume localitate": "Gătaia",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie si pentru Masuri de Siguranta Jebel",
+    "Adrese de email": "",
+    "COD ISO Judet": "TM",
+    "Nume judet": "Timiș",
+    "Nume localitate": "Jebel",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Sectia de psihiatrie Balaci a Spitalului Judetean de Urgenta Alexandria",
+    "Adrese de email": "",
+    "COD ISO Judet": "TR",
+    "Nume judet": "Teleorman",
+    "Nume localitate": "Balaci",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul de Psihiatrie Poroschia",
+    "Adrese de email": "",
+    "COD ISO Judet": "TR",
+    "Nume judet": "Teleorman",
+    "Nume localitate": "Poroschia",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Municipal \"Dr. Gheorghe Marinescu\" Tarnaveni",
+    "Adrese de email": "",
+    "COD ISO Judet": "MS",
+    "Nume judet": "Mureș",
+    "Nume localitate": "Tarnaveni",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Spital",
+    "Denumire Institutie": "Spitalul Orasenesc Dr. Valer Russu Ludus",
+    "Adrese de email": "",
+    "COD ISO Judet": "MS",
+    "Nume judet": "Mureş",
+    "Nume localitate": "Luduș",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  }
+]

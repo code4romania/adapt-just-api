@@ -1,0 +1,587 @@
+[
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "DGASPC Sibiu",
+    "COD ISO Judet": "SB",
+    "Nume judet": "Sibiu",
+    "Nume localitate": "Sibiu",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "DGASPC Sibiu SERVICIUL DE EVALUARE COMPLEXĂ A COPILULUI CU DIZABILITĂȚI",
+    "COD ISO Judet": "SB",
+    "Nume judet": "Sibiu",
+    "Nume localitate": "Sibiu",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de Plasament pentru Copilul cu Dizabilități Turnu Roșu",
+    "COD ISO Judet": "SB",
+    "Nume judet": "Sibiu",
+    "Nume localitate": "Turnu Rosu",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de Plasament Orlat",
+    "COD ISO Judet": "SB",
+    "Nume judet": "Sibiu",
+    "Nume localitate": "Orlat",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Complexul de Servicii Comunitare Prichindelul",
+    "COD ISO Judet": "SB",
+    "Nume judet": "Sibiu",
+    "Nume localitate": "Sibiu",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de Plasament pentru Copilul cu Dizabilități „Speranța” Sibiu",
+    "COD ISO Judet": "SB",
+    "Nume judet": "Sibiu",
+    "Nume localitate": "Sibiu",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de Plasament „Gulliver” Sibiu",
+    "COD ISO Judet": "SB",
+    "Nume judet": "Sibiu",
+    "Nume localitate": "Sibiu",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "DGASPC Hunedoara",
+    "COD ISO Judet": "HD",
+    "Nume judet": "Hunedoara",
+    "Nume localitate": "Hunedoara",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Apartament familial Vulcan",
+    "COD ISO Judet": "HD",
+    "Nume judet": "Hunedoara",
+    "Nume localitate": "Vulcan",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Rețea de case familiale Orăştie (Casa Familială 1, Casa Familială 2, Casa Familială 3)",
+    "COD ISO Judet": "HD",
+    "Nume judet": "Hunedoara",
+    "Nume localitate": "Orastie",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Rețea de case familiale pentru copii cu dizabilități Hunedoara (Casa Familială 1, Casa Familială 2)",
+    "COD ISO Judet": "HD",
+    "Nume judet": "Hunedoara",
+    "Nume localitate": "Hunedoara",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul specializat pentru copilul cu dizabilităţi Hunedoara",
+    "COD ISO Judet": "HD",
+    "Nume judet": "Hunedoara",
+    "Nume localitate": "Hunedoara",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de recuperare pentru copii cu dizabilităţi Hunedoara",
+    "COD ISO Judet": "HD",
+    "Nume judet": "Hunedoara",
+    "Nume localitate": "Hunedoara",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul maternal Hunedoara",
+    "COD ISO Judet": "HD",
+    "Nume judet": "Hunedoara",
+    "Nume localitate": "Hunedoara",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul specializat de zi pentru resocializarea copilului predelincvent şi delincvent provenit din familii dezorganizate",
+    "COD ISO Judet": "HD",
+    "Nume judet": "Hunedoara",
+    "Nume localitate": "Hunedoara",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de zi de recuperare pentru copii Deva",
+    "COD ISO Judet": "DV",
+    "Nume judet": "Deva",
+    "Nume localitate": "Deva",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de primire în regim de urgenţă Deva",
+    "COD ISO Judet": "DV",
+    "Nume judet": "Deva",
+    "Nume localitate": "Deva",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "DGASPC Timiş Serviciul Management de Caz de tip familial pentru Copil – Zona I",
+    "COD ISO Judet": "TM",
+    "Nume judet": "Timiş",
+    "Nume localitate": "Timișoara",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "DGASPC Timiş Serviciul Management de Caz de tip familial pentru Copil – Zona II",
+    "COD ISO Judet": "TM",
+    "Nume judet": "Timiş",
+    "Nume localitate": "Timişoara",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Serviciul de Evaluare Complexă a Copilului cu Dizabilități",
+    "COD ISO Judet": "TM",
+    "Nume judet": "Timiş",
+    "Nume localitate": "Timişoara",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Biroul de Consiliere Psihologică",
+    "COD ISO Judet": "TM",
+    "Nume judet": "Timiş",
+    "Nume localitate": "Timişoara",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Complexul de Servicii pentru Intervenție Specializată în Domeniul Protecției Familiei și a Copilului Timiș",
+    "COD ISO Judet": "TM",
+    "Nume judet": "Timiş",
+    "Nume localitate": "Timişoara",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Complexul de Servicii Sociale pentru Intervenții Regim de Urgenţă în Domeniul Protecției Copilului",
+    "COD ISO Judet": "TM",
+    "Nume judet": "Timiş",
+    "Nume localitate": "Timişoara",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de Plasament Lugoj",
+    "COD ISO Judet": "TM",
+    "Nume judet": "Timiş",
+    "Nume localitate": "Lugoj",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de Plasament Găvojdia",
+    "COD ISO Judet": "TM",
+    "Nume judet": "Timiş",
+    "Nume localitate": "Găvojdia",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de Plasament pentru Copilul cu Dizabilități Recaș",
+    "COD ISO Judet": "TM",
+    "Nume judet": "Timiş",
+    "Nume localitate": "Recaș",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de Recuperare și Reabilitare Neuropsihiatrică pentru Copii Timișoara",
+    "COD ISO Judet": "TM",
+    "Nume judet": "Timiş",
+    "Nume localitate": "Timișoara",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de Recuperare şi Reabilitare Neuropsihiatrică pentru Copii Lugoj",
+    "COD ISO Judet": "TM",
+    "Nume judet": "Timiş",
+    "Nume localitate": "Lugoj",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Casa de tip Familial Sfântul Ioan (Nădrag)",
+    "COD ISO Judet": "TM",
+    "Nume judet": "Timiş",
+    "Nume localitate": "Nădrag",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Casa de tip Familial Sfântul Mihail (Săcălaz)",
+    "COD ISO Judet": "TM",
+    "Nume judet": "Timiş",
+    "Nume localitate": "Săcălaz",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "DGASPC Constanţa",
+    "COD ISO Judet": "CT",
+    "Nume judet": "Constanţa",
+    "Nume localitate": "Constanţa",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Casa de Tip Familial Decebal",
+    "COD ISO Judet": "CT",
+    "Nume judet": "Constanţa",
+    "Nume localitate": "Constanţa",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de zi pentru copii cu autism",
+    "COD ISO Judet": "CT",
+    "Nume judet": "Constanţa",
+    "Nume localitate": "Constanța",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul maternal Mangaila cu modul prevenire abandon",
+    "COD ISO Judet": "CT",
+    "Nume judet": "Constanţa",
+    "Nume localitate": "Mangalia",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de Plasament Antonio",
+    "COD ISO Judet": "CT",
+    "Nume judet": "Constanţa",
+    "Nume localitate": "Constanța",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de plasament Delfinul",
+    "COD ISO Judet": "CT",
+    "Nume judet": "Constanţa",
+    "Nume localitate": "Agigea",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de plasament Micul Rotterdam",
+    "COD ISO Judet": "CT",
+    "Nume judet": "Constanţa",
+    "Nume localitate": "Constanța",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de plasament Ovidiu",
+    "COD ISO Judet": "CT",
+    "Nume judet": "Constanţa",
+    "Nume localitate": "Ovidiu",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de plasament Traian",
+    "COD ISO Judet": "CT",
+    "Nume judet": "Constanţa",
+    "Nume localitate": "Traian",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "COMPLEXUL DE SERVICII PENTRU PROTECȚIA ÎN REGIM DE URGENȚĂ A COPILULUI, A CUPLULUI MAMĂ-COPIL ȘI A VICTIMELOR VIOLENȚEI ÎN FAMILIE",
+    "COD ISO Judet": "CT",
+    "Nume judet": "Constanţa",
+    "Nume localitate": "Constanța",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Complexul de Servicii Comunitare Cristina",
+    "COD ISO Judet": "CT",
+    "Nume judet": "Constanţa",
+    "Nume localitate": "Constanța",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Complexul de servici comunitare Orizont",
+    "COD ISO Judet": "CT",
+    "Nume judet": "Constanţa",
+    "Nume localitate": "Constanța",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Complexul de servicii comunitare Sparta Rotterdam",
+    "COD ISO Judet": "CT",
+    "Nume judet": "Constanţa",
+    "Nume localitate": "Techirghiol",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "DGASPC Cluj",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Cluj-Napoca",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "DGASPC Cluj Direcția Protecția Drepturilor Copilului",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Cluj-Napoca",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Complexul de Servicii destinat Protecției Copilului nr.2",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Cluj-Napoca",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "U.T.F. Gherla",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Gherla",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "U.T.F. Turda",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Turda",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "CASA DE TIP FAMILIAL \"SFÂNTA ELENA\", APAHIDA",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Apahida",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "CASA DE TIP FAMILIAL \"NEGHINIŢĂ\", FLOREȘTI",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Floresti",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrului de Primire a Copilului în Regim de Urgență \"Gavroche",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Cluj-Napoca",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "CENTRUL REZIDENŢIAL PENTRU COPILUL ABUZAT \"PERLINO",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Cluj-Napoca",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "CENTRU PENTRU REABILITARE SOCIALĂ ȘI PRIMIRE ÎN REGIM DE URGENȚĂ A VICTIMELOR TRAFICULUI DE PERSOANE, INTERVENȚII ÎN SITUAȚII DE TRAFIC, MIGRAȚIE ȘI REPATRIERI, CLUJ-NAPOCA",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Cluj-Napoca",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "ADĂPOSTUL DE ZI ȘI DE NOAPTE PENTRU COPIII STRĂZII \"ARLECHINO",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Cluj-Napoca",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "ADĂPOST DE ZI ȘI DE NOAPTE PENTRU COPII STRĂZII TURDA",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Turda",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul Maternal “Luminita”",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Cluj-Napoca",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul Maternal „Iris” Câmpia Turzii",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Câmpia Turzii",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de Zi \"Spiriduşii\" Câmpia Turzii",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Câmpia Turzii",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Centrul de Zi “Micul Prinț”",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Gherla",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "Complexul de Servicii pentru Recuperarea Copiilor cu Handicap Neuropsihic Sever “Pinocchio”",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Cluj-Napoca",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "COMPLEX DE SERVICII PENTRU RECUPERAREA COPIILOR CU HANDICAP NEOROPSIHIC UȘOR ȘI MEDIU NR.9 \"ȚĂNDĂRICĂ",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "CENTRUL DE RECUPERARE DIN CADRUL COMPLEXULUI COMUNITAR DE SERVICII PENTRU COPILUL CU HANDICAP CLUJ-NAPOCA",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Cluj-Napoca",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "CENTRUL DE RECUPERARE PSIHO-NEURO-MOTORIE PENTRU COPILUL CU HANDICAP \"SFÂNTA IRINA",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Turda",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "COMPLEX COMUNITAR DE SERVICII PENTRU COPILUL CU HANDICAP CLUJ NAPOCA",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Cluj-Napoca",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  },
+  {
+    "Tip institutie": "Centru",
+    "Denumire Institutie": "CASE DE TIP FAMILIAL HUEDIN",
+    "COD ISO Judet": "CJ",
+    "Nume judet": "Cluj",
+    "Nume localitate": "Huedin",
+    "Coordonare Longitudine (optional)": "",
+    "Coordonate Latitudine (optional)": ""
+  }
+]
