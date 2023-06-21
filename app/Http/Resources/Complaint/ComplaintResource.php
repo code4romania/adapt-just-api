@@ -24,12 +24,20 @@ class ComplaintResource extends JsonResource
             'type_label' => ComplaintConstant::typeLabels()[$this->type],
             'name' => $this->name,
             'location_id' => $this->location_id,
+            'location' => $this->location_id ? [
+                'type' => $this->location->type,
+                'name' => $this->location->name,
+            ] : null,
+
             'location_name' => $this->location_name,
             'location_to_id' => $this->location_to_id,
             'location_to_name' => $this->location_to_name,
             'proof_type' => $this->proof_type,
             'details' => $this->details,
             'uploads' => UploadResource::collection($this->uploads),
+
+            'county_name' => $this->county_name,
+            'city_name' => $this->city_name,
 
             'register_number' => $this->register_number,
             'created_at' => Carbon::parse($this->created_at)->format('Y-m-d H:i'),
