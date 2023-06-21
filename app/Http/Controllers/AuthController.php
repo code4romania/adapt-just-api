@@ -46,7 +46,9 @@ class AuthController extends Controller
         }
         RateLimiter::clear($this->throttleKey());
 
-        return $this->authenticated($request, auth()->user());
+        $token = $user->createToken($user->email);
+
+        return ['token' => $token];
     }
 
     /**
