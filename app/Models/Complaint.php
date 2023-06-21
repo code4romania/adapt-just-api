@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Complaint extends Model
@@ -32,6 +33,24 @@ class Complaint extends Model
     protected $casts = [
         'details' => 'array'
     ];
+
+
+    /**
+     * @return BelongsTo
+     */
+    public function location(): BelongsTo
+    {
+        return $this->belongsTo(Location::class);
+    }
+
+    /**
+     * @return BelongsTo
+     */
+    public function locationTo(): BelongsTo
+    {
+        return $this->belongsTo(Location::class);
+    }
+
 
     /**
      * @return BelongsToMany
