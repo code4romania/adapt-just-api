@@ -46,7 +46,7 @@ Route::prefix('public')->name('public.')->group(function () {
     });
     Route::prefix('resources')->name('resources.')->controller(ResourcePublicController::class)->group(function () {
         Route::get('{type}', 'index');
-        Route::get('{article}/show', 'show');
+        Route::get('{resource}/show', 'show');
     });
 });
 

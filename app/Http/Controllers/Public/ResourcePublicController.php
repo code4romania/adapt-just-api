@@ -4,11 +4,8 @@ namespace App\Http\Controllers\Public;
 
 use App\Constants\ResourceConstant;
 use App\Http\Controllers\Controller;
-use App\Http\Resources\Article\ArticleListPublicResource;
-use App\Http\Resources\Article\ArticlePublicResource;
 use App\Http\Resources\Resource\ResourceListPublicResource;
 use App\Http\Resources\Resource\ResourcePublicResource;
-use App\Models\Article;
 use App\Models\Resource;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 
