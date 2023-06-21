@@ -16,7 +16,7 @@ class ResourcePublicController extends Controller
     public function index($type): AnonymousResourceCollection
     {
         $resources = Resource::query()
-            ->select(['id', 'name', 'short_content', 'upload_id'])
+            ->select(['id', 'name', 'phone', 'short_content', 'upload_id'])
             ->where('status', ResourceConstant::STATUS_PUBLISHED)
             ->where('type', $type)
             ->get()
