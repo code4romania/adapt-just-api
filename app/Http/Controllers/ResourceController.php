@@ -10,9 +10,11 @@ use App\Models\Article;
 use App\Models\Resource;
 use App\Services\ArticleService;
 use App\Services\ResourceService;
+use App\Services\UploadService;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
+use Illuminate\Support\Arr;
 
 class ResourceController extends Controller
 {
@@ -33,7 +35,12 @@ class ResourceController extends Controller
     public function store(StoreOrUpdateResourceRequest $request): JsonResponse
     {
         $this->authorize('create', Resource::class);
-        ResourceService::create($request->validated());
+        $inputs = $request->validated();
+        if( !empty($inputs['content']) ) {
+            $inputs['content'] = UploadService::parseHtmlContent(Arr::get($inputs, 'content', ''));
+        }
+
+        ResourceService::create($inputs);
 
         return $this->sendSuccess('Resursa a fost creata cu succes.');
     }
@@ -45,7 +52,11 @@ class ResourceController extends Controller
     public function update(StoreOrUpdateResourceRequest $request, Resource $resource): JsonResponse
     {
         $this->authorize('update', Resource::class);
-        ResourceService::update($request->validated(), $resource->id);
+        $inputs = $request->validated();
+        if( !empty($inputs['content']) ) {
+            $inputs['content'] = UploadService::parseHtmlContent(Arr::get($inputs, 'content', ''));
+        }
+        ResourceService::update($inputs, $resource->id);
 
         return $this->sendSuccess('Resursa a fost actualizata cu succes.');
     }

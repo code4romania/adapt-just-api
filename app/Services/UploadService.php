@@ -20,10 +20,10 @@ class UploadService
 
     public static function parseHtmlContent($html, $path = 'articles') {
 
-        preg_match_all('/<img[^>]+>/i',$html, $imgTags);
+        preg_match_all('/<img[^>]+>/i', $html, $imgTags);
         for ($i = 0; $i < count($imgTags[0]); $i++) {
-            preg_match('/src="([^"]+)/i',$imgTags[0][$i], $imgage);
-            $imagePath = str_ireplace( 'src="', '',  $imgage[0]);
+            preg_match('/src="([^"]+)/i', $imgTags[0][$i], $imgage);
+            $imagePath = str_ireplace( 'src="', '', $imgage[0]);
             $imagePathExploded = parse_url($imagePath);
 
             if (!empty($imagePathExploded['path'])) {
@@ -35,6 +35,7 @@ class UploadService
                     self::setUploadPath($upload, $path);
                     $upload->refresh();
                     $imageNewPath = Storage::disk('s3')->temporaryUrl($upload->path, now()->addDay(2));
+
                     $html = str_replace($imagePath, $imageNewPath, $html);
                 }
 

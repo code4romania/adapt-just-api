@@ -4,6 +4,7 @@ namespace App\Http\Resources\Resource;
 
 use App\Constants\ResourceConstant;
 use App\Http\Resources\Upload\UploadResource;
+use App\Services\UploadService;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
@@ -25,7 +26,7 @@ class ResourceResource extends JsonResource
             'status' => $this->status,
             'phone' => $this->phone,
 
-            'content' => $this->content,
+            'content' => UploadService::parseHtmlContent($this->content, 'resources'),
             'short_content' => $this->short_content,
 
             'upload_id' => $this->upload_id,
