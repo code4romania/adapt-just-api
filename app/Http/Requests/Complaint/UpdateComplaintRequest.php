@@ -22,7 +22,7 @@ class UpdateComplaintRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'registration_number' => [
+            'register_number' => [
                 'required',
                 'max:255'
             ]
