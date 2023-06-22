@@ -18,7 +18,7 @@ class UploadService
     }
 
 
-    public static function parseHtmlContent($html) {
+    public static function parseHtmlContent($html, $path = 'articles') {
 
         preg_match_all('/<img[^>]+>/i',$html, $imgTags);
         for ($i = 0; $i < count($imgTags[0]); $i++) {
@@ -32,7 +32,7 @@ class UploadService
                 }
                 $upload = Upload::where('path', $imagePathExploded['path'])->first();
                 if ($upload) {
-                    self::setUploadPath($upload, 'articles');
+                    self::setUploadPath($upload, $path);
                     $upload->refresh();
                     $imageNewPath = Storage::disk('s3')->temporaryUrl($upload->path, now()->addDay(2));
                     $html = str_replace($imagePath, $imageNewPath, $html);

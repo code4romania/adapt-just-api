@@ -21,7 +21,7 @@ class ResourcePublicResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'phone' => $this->phone,
-            'content' => UploadService::parseHtmlContent($this->content),
+            'content' => UploadService::parseHtmlContent($this->content, 'resources'),
             'short_content' => $this->short_content,
             'upload' => $this->upload_id ? new UploadResource($this->upload) : null,
             'published_at' => $this->published_at ? Carbon::parse($this->published_at)->format('Y-m-d H:i') : null
