@@ -33,10 +33,11 @@ class StoreComplaintRequest extends FormRequest
                 case ComplaintConstant::TYPE_MOVE:
                     return $this->meMoveRules();
                 case ComplaintConstant::TYPE_EVALUATION:
+                    return  $this->meEvaluationRules();
             }
-        } else {
-            return $this->otherRules();
         }
+        return $this->otherRules();
+
     }
 
     protected function meHurtRules()
@@ -145,10 +146,6 @@ class StoreComplaintRequest extends FormRequest
             'victim' => [
                 'required',
                 Rule::in(ComplaintConstant::victims())
-            ],
-            'type' => [
-                'required',
-                Rule::in(ComplaintConstant::types())
             ],
             'name' => [
                 'required',
