@@ -34,11 +34,20 @@ class ComplaintResource extends JsonResource
             'location_to_name' => $this->location_to_name,
             'proof_type' => $this->proof_type,
             'details' => $this->details,
+            'detail_labels' => $this->getDetailLabels(),
             'reason' => $this->reason,
             'uploads' => UploadResource::collection($this->uploads),
 
+            'county_iso' => $this->county_iso,
             'county_name' => $this->county_name,
             'city_name' => $this->city_name,
+
+            'sent_to_institutions' => $this->sent_to_institutions,
+            'sent_to_emails' => $this->sent_to_emails,
+            'sent_at' => Carbon::parse($this->sent_at)->format("Y-m-d H:i"),
+
+            'lat' => $this->lat,
+            'lng' => $this->lng,
 
             'register_number' => $this->register_number,
             'created_at' => Carbon::parse($this->created_at)->format('Y-m-d H:i'),

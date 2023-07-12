@@ -63,15 +63,11 @@ class ComplaintService
         return $complaint->delete();
     }
 
-    public static function getInsititutionsDetails($complaint)
+    public static function getInsititutionsDetails($victim, $type = null, $countyISO = null, $lat = null, $lng = null)
     {
-        $countyISO = $complaint?->county_iso;
-//        if (!$countyISO && $complaint->lat && $complaint->lng) {
-//        }
-
         $locationIndex = $countyISO ? 'with_location' : 'without_location';
-        if ($complaint->victim == ComplaintConstant::VICTIM_ME) {
-            $institutionTypes = ComplaintConstant::institutionTypeList()[ComplaintConstant::VICTIM_ME][$complaint->type][$locationIndex];
+        if ($victim == ComplaintConstant::VICTIM_ME) {
+            $institutionTypes = ComplaintConstant::institutionTypeList()[$victim][$type][$locationIndex];
         } else {
             $institutionTypes = ComplaintConstant::institutionTypeList()[ComplaintConstant::VICTIM_OTHER][$locationIndex];
         }
@@ -97,7 +93,6 @@ class ComplaintService
         }
         $emails = array_unique($emails);
 
-
         return [
             'types' => $institutionTypes,
             'emails' => $emails
@@ -106,7 +101,7 @@ class ComplaintService
 
     public static function sendEmail($complaint)
     {
-        $institutionDetails = ComplaintService::getInsititutionsDetails($complaint);
+        $institutionDetails = ComplaintService::getInsititutionsDetails($complaint->victim, $complaint->type, $complaint->county_iso, $complaint->lat, $complaint->lng);
         if (config('app.env') !== "production") {
             $emailLists = [
                 'miruna.muscan@code4.ro',

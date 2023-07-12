@@ -59,7 +59,7 @@
                         {{ strtoupper($complaint->county_name) }}
                     @endif
                     @if (!empty($complaint->location_name))
-                            în {{ strtoupper($complaint->location_name) }},
+                        în {{ strtoupper($complaint->location_name) }},
                     @endif
                 @endif
                 s-au întâmplat următoarele

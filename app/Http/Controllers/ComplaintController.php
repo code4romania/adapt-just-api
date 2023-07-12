@@ -2,19 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use App\Http\Requests\Complaint\GetInstitutionsRequest;
 use App\Http\Requests\Complaint\StoreComplaintRequest;
 use App\Http\Requests\Complaint\UpdateComplaintRequest;
-use App\Http\Requests\User\StoreUserRequest;
-use App\Http\Requests\User\UpdateUserRequest;
 use App\Http\Resources\Complaint\ComplaintResource;
-use App\Http\Resources\User\UserResource;
 use App\Models\Complaint;
-use App\Models\Permission;
-use App\Models\User;
+use App\Models\Location;
 use App\Services\ComplaintService;
-use App\Services\UserService;
-use Carbon\Carbon;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -66,6 +60,26 @@ class ComplaintController extends Controller
         $this->authorize('view', Complaint::class);
 
         return new ComplaintResource($complaint);
+    }
+
+
+    public function institutions(GetInstitutionsRequest $request)
+    {
+        $victim = $request->get('victim', null);
+        $type   = $request->get('type', null);
+        $locationId = $request->get('location_id', null);
+        $lat = $request->get('lat', null);
+        $lng = $request->get('lng', null);
+        $countyISO = null;
+
+        if ($locationId) {
+            $location = Location::findOrFail($locationId);
+            $countyISO = $location->county_id;
+        }
+
+        $institutionDetails = ComplaintService::getInsititutionsDetails($victim, $type, $countyISO, $lat, $lng);
+
+        return $institutionDetails['types'] ?? [];
     }
 
 

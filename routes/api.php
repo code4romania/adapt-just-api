@@ -49,6 +49,10 @@ Route::prefix('public')->name('public.')->group(function () {
         Route::get('{type}', 'index');
         Route::get('{resource}/show', 'show');
     });
+
+    Route::prefix('complaints')->name('complaints.')->controller(ComplaintController::class)-> group(function () {
+        Route::get('institutions/list', 'institutions');
+    });
 });
 
 
