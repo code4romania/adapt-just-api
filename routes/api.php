@@ -32,6 +32,7 @@ Route::post('login', [AuthController::class, 'login'])->name('auth.login');
 Route::post('setup-password/{id}/{hash}', [PasswordSetupController::class, 'setup'])->name('password.setup');
 
 Route::post('uploads', [UploadController::class, 'store'])->name('uploads.store');
+Route::get('uploads/{uploadHashName}', [UploadController::class, 'show'])->name('uploads.show');
 
 
 Route::prefix('complaints')->name('complaints.')->controller(ComplaintController::class)->group(function () {

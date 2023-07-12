@@ -21,7 +21,7 @@ class ComplaintResource extends JsonResource
             'id' => $this->id,
             'victim' => $this->victim,
             'type' => $this->type,
-            'type_label' => ComplaintConstant::typeLabels()[$this->type],
+            'type_label' => ComplaintConstant::typeLabels()[$this->type] ?? '',
             'name' => $this->name,
             'location_id' => $this->location_id,
             'location' => $this->location_id ? [
@@ -34,6 +34,7 @@ class ComplaintResource extends JsonResource
             'location_to_name' => $this->location_to_name,
             'proof_type' => $this->proof_type,
             'details' => $this->details,
+            'reason' => $this->reason,
             'uploads' => UploadResource::collection($this->uploads),
 
             'county_name' => $this->county_name,

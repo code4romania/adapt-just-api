@@ -2,9 +2,11 @@
 
 namespace App\Models;
 
+use App\Constants\ComplaintConstant;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Support\Arr;
 
 class Complaint extends Model
 {
@@ -27,11 +29,20 @@ class Complaint extends Model
         'reason',
         'proof_type',
         'lat',
-        'lng'
+        'lng',
+        'county_iso',
+        'county_name',
+        'city_name',
+        'sent_to_institutions',
+        'sent_to_emails',
+        'sent_at',
     ];
 
     protected $casts = [
-        'details' => 'array'
+        'details' => 'array',
+        'sent_to_institutions' => 'array',
+        'sent_to_emails' => 'array',
+        'sent_at' => 'datetime'
     ];
 
 
@@ -58,6 +69,23 @@ class Complaint extends Model
     public function uploads(): BelongsToMany
     {
         return $this->belongsToMany(Upload::class, 'complaint_uploads');
+    }
+
+
+    public function getDetailLabels()
+    {
+        $details = [];
+        if (is_array($this->details) && count($this->details)) {
+            foreach ($this->details as $d) {
+                if ($d === ComplaintConstant::DETAIL_OTHER) {
+                    $details[] = $this->reason;
+                } elseif (Arr::get(ComplaintConstant::detailLabels(), $d)) {
+                    $details[] = Arr::get(ComplaintConstant::detailLabels(), $d);
+                }
+            }
+        }
+
+        return $details;
     }
 
 }

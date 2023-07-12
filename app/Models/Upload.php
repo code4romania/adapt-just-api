@@ -14,7 +14,8 @@ class Upload extends Model
         'size',
         'path',
         'extension',
-        'mime'
+        'mime',
+        'hash_name'
     ];
 
     /**
@@ -28,7 +29,8 @@ class Upload extends Model
         'size' => 'integer',
         'path' => 'string',
         'extension' => 'string',
-        'mime' => 'string'
+        'mime' => 'string',
+        'hash_name' => 'string'
     ];
 
 }

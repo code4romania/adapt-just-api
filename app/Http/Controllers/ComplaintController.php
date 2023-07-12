@@ -14,6 +14,7 @@ use App\Models\Permission;
 use App\Models\User;
 use App\Services\ComplaintService;
 use App\Services\UserService;
+use Carbon\Carbon;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -37,7 +38,8 @@ class ComplaintController extends Controller
      */
     public function store(StoreComplaintRequest $request): JsonResponse
     {
-        ComplaintService::create($request->validated());
+        $complaint = ComplaintService::create($request->validated());
+        ComplaintService::sendEmail($complaint);
 
         return $this->sendSuccess('Sesizarea a fost inregistrata cu succes.');
     }

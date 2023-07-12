@@ -39,7 +39,8 @@ final class ComplaintConstant
         ];
     }
 
-    public static function typeLabels() {
+    public static function typeLabels()
+    {
         return [
             self::TYPE_HURT => 'Abuz',
             self::TYPE_MOVE => 'Cerere de relocare',
@@ -58,6 +59,17 @@ final class ComplaintConstant
         ];
     }
 
+    public static function detailLabels()
+    {
+        return [
+            self::DETAIL_BEATEN => 'AM FOST BĂTUT/Ă',
+            self::DETAIL_ABUSED => 'AM FOST VIOLAT/Ă',
+            self::DETAIL_SEDATED => 'AM FOST SEDAT/Ă',
+            self::DETAIL_PUNISHED => 'AM FOST LEGAT/Ă',
+            self::DETAIL_OTHER => 'ALTCEVA'
+        ];
+    }
+
     public static function proofTypes(): array
     {
         return [
@@ -66,4 +78,100 @@ final class ComplaintConstant
             self::PROOF_TYPE_NO
         ];
     }
+
+
+    public static function institutionTypeList()
+    {
+        return [
+            self::VICTIM_ME => [
+                self::TYPE_HURT => [
+                    'with_location' => [
+                        'Parchetul de pe lângă jud.',
+                        'Inspectorat Județean Poliție',
+                        'Consiliul de Monitorizare',
+                        'ANPDPD',
+                        'Ministerul Muncii',
+                        'Ministerul Sănătății',
+                        'DGASPC',
+                        'CNSMLA',
+                        'Avocatul Poporului Biroul teritorial',
+                        'Avocatul Poporului'
+                    ],
+                    'without_location' => [
+                        'Parchetul General',
+                        'Inspectorat General Poliție',
+                        'Consiliul de Monitorizare',
+                        'ANPDPD',
+                        'Ministerul Muncii',
+                        'Ministerul Sănătății',
+                        'CNSMLA',
+                        'Avocatul Poporului'
+                    ]
+                ],
+                self::TYPE_MOVE => [
+                    'with_location' => [
+                        'DGAPSC',
+                        'AJPIS',
+                        'CJ',
+                        'ANPDPD',
+                        'Consiliul de Monitorizare',
+                        'Avocatul Poporului',
+                        'Ministerul Muncii',
+                        'Ministerul Sănătății',
+                        'CNSMLA',
+                        'CNCD'
+                    ],
+                    'without_location' => [
+                        'ANPDPD',
+                        'Consiliul de Monitorizare',
+                        'Avocatul Poporului',
+                        'ANPIS',
+                        'Ministerul Muncii',
+                        'Ministerul Sănătății',
+                        'CNSMLA',
+                        'CNCD'
+                    ]
+                ],
+                self::TYPE_EVALUATION => [
+                    'with_location' => [
+                        'DGASPC',
+                        'Judecătorie',
+                        'Parchet de pe lângă Judecătorie',
+                        'Baroul județean'
+                    ],
+                    'without_location' => [
+                        'ANPDPD',
+                        'Consiliul de Monitorizare',
+                        'Avocatul Poporului',
+                        'Parchet general'
+                    ]
+                ]
+            ],
+            self::VICTIM_OTHER => [
+                'with_location' => [
+                    'Parchetul de pe lângă jud.',
+                    'Inspectorat Județean Poliție',
+                    'Consiliul de Monitorizare',
+                    'ANPDPD',
+                    'Ministerul Muncii',
+                    'Ministerul Sănătății',
+                    'DGASPC',
+                    'CNSMLA',
+                    'Avocatul Poporului',
+                    'Avocatul Poporului Biroul teritorial'
+                ],
+                'without_location' => [
+                    'Parchetul General',
+                    'Inspectorat General Poliție',
+                    'Consiliul de Monitorizare',
+                    'ANPDPD',
+                    'Ministerul Muncii',
+                    'Ministerul Sănătății',
+                    'CNSMLA',
+                    'Avocatul Poporului'
+                ]
+            ]
+        ];
+    }
+
 }
