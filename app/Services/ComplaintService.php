@@ -45,10 +45,12 @@ class ComplaintService
         }
 
         if (!empty($data['signature'])) {
-            $signarure = UploadService::uploadBase64($data['signature'], 'complaints/'.$complaint->id);
-            if ($signarure) {
+
+            $signatureBase64 = preg_replace('#^data:image/[^;]+;base64,#', '', $data['signature']);
+            $signature = UploadService::uploadBase64($signatureBase64, 'complaints/'.$complaint->id);
+            if ($signature) {
                 $complaint->update([
-                    'signature_upload_id' => $signarure->id
+                    'signature_upload_id' => $signature->id
                 ]);
             }
         }
