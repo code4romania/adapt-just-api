@@ -62,10 +62,10 @@ final class ComplaintConstant
     public static function detailLabels()
     {
         return [
-            self::DETAIL_BEATEN => 'AM FOST BATUT/A',
-            self::DETAIL_ABUSED => 'AM FOST VIOLAT/A',
-            self::DETAIL_SEDATED => 'AM FOST SEDAT/A',
-            self::DETAIL_PUNISHED => 'AM FOST LEGAT/A',
+            self::DETAIL_BEATEN => 'AM FOST BĂTUT/Ă',
+            self::DETAIL_ABUSED => 'AM FOST VIOLAT/Ă',
+            self::DETAIL_SEDATED => 'AM FOST SEDAT/Ă',
+            self::DETAIL_PUNISHED => 'AM FOST LEGAT/Ă',
             self::DETAIL_OTHER => 'ALTCEVA'
         ];
     }
