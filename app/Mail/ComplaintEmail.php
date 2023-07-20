@@ -46,7 +46,8 @@ class ComplaintEmail extends Mailable
         return new Content(
             view: 'emails.complaint',
             with: [
-                'complaint' => $this->complaint
+                'complaint' => $this->complaint,
+                'hideSignature' => true
             ]
         );
     }

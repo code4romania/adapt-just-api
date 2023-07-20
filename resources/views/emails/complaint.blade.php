@@ -131,11 +131,12 @@
     <tr>
         <td></td>
         <td>
-            SEMNAT,<br>
+            SEMNAT,
+            <br>
             {{ strtoupper($complaint->name) }}
-            @if ($complaint->signature && $complaint->signature->hash_name)
+            @if ($complaint->signature && $complaint->signature->hash_name && empty($hideSignature))
                 <br>
-                <img width="200px" src="{{ \Illuminate\Support\Facades\URL::signedRoute('uploads.show', ['uploadHashName' => $complaint->signature->hash_name]) }}" />
+                <img width="200px" src="{{ \Illuminate\Support\Facades\URL::signedRoute('uploads.show', ['uploadHashName' => $complaint->signature->hash_name]) }}" >
             @endif
         </td>
         <td></td>
