@@ -19,10 +19,11 @@ class ComplaintController extends Controller
     /**
      * @throws AuthorizationException
      */
-    public function index(): AnonymousResourceCollection
+    public function index(Request $request): AnonymousResourceCollection
     {
         $this->authorize('viewAny', Complaint::class);
-        $complaints = ComplaintService::complaints();
+        $perPage = $request->get('page_size', 10);
+        $complaints = ComplaintService::complaints($perPage);
 
         return ComplaintResource::collection($complaints);
     }

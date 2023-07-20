@@ -34,9 +34,24 @@ class ComplaintService
 
     public static function create($data): Model|Builder
     {
+        $data['id_card_upload_id'] = $data['id_card_upload']['id'] ?? null;
         $complaint = Complaint::query()->create($data);
-        $uploads = Arr::pluck(Arr::get($data,'uploads', []), 'id');
+
+        $uploads = Arr::pluck(Arr::get($data, 'uploads', []), 'id');
         $complaint->uploads()->sync($uploads);
+
+        foreach ($complaint->uploads as $upload) {
+            UploadService::setUploadPath($upload, 'complaints/'.$complaint->id);
+        }
+
+        if (!empty($data['signature'])) {
+            $signarure = UploadService::uploadBase64($data['signature'], 'complaints/'.$complaint->id);
+            if ($signarure) {
+                $complaint->update([
+                    'signature_upload_id' => $signarure->id
+                ]);
+            }
+        }
 
         $dataUpdate = [];
         if ($complaint->location) {

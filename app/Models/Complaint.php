@@ -20,6 +20,7 @@ class Complaint extends Model
         'victim',
         'type',
         'name',
+        'cnp',
         'location_id',
         'location_name',
         'location_to_id',
@@ -36,6 +37,8 @@ class Complaint extends Model
         'sent_to_institutions',
         'sent_to_emails',
         'sent_at',
+        'id_card_upload_id',
+        'signature_upload_id'
     ];
 
     protected $casts = [
@@ -71,6 +74,21 @@ class Complaint extends Model
         return $this->belongsToMany(Upload::class, 'complaint_uploads');
     }
 
+    /**
+     * @return BelongsTo
+     */
+    public function idCard(): BelongsTo
+    {
+        return $this->belongsTo(Upload::class, 'id_card_upload_id');
+    }
+
+    /**
+     * @return BelongsTo
+     */
+    public function signature(): BelongsTo
+    {
+        return $this->belongsTo(Upload::class, 'signature_upload_id');
+    }
 
     public function getDetailLabels()
     {

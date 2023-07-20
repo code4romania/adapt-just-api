@@ -75,6 +75,15 @@ class StoreComplaintRequest extends FormRequest
             'uploads' => [
                 Rule::requiredIf($this->get('proof_type') == ComplaintConstant::PROOF_TYPE_YES),
                 'array'
+            ],
+            'cnp' => [
+                'sometimes'
+            ],
+            'id_card_upload' => [
+                'sometimes'
+            ],
+            'signature' => [
+                'sometimes'
             ]
         ];
     }
@@ -112,6 +121,15 @@ class StoreComplaintRequest extends FormRequest
             ],
             'reason' => [
                 'required'
+            ],
+            'cnp' => [
+                'sometimes'
+            ],
+            'id_card_upload' => [
+                'sometimes'
+            ],
+            'signature' => [
+                'sometimes'
             ]
         ];
     }
@@ -135,6 +153,15 @@ class StoreComplaintRequest extends FormRequest
                 'sometimes'
             ],
             'location_name' => [
+                'sometimes'
+            ],
+            'cnp' => [
+                'sometimes'
+            ],
+            'id_card_upload' => [
+                'sometimes'
+            ],
+            'signature' => [
                 'sometimes'
             ]
         ];
@@ -167,6 +194,15 @@ class StoreComplaintRequest extends FormRequest
             'uploads' => [
                 Rule::requiredIf($this->get('proof_type') == ComplaintConstant::PROOF_TYPE_YES),
                 'array'
+            ],
+            'cnp' => [
+                'sometimes'
+            ],
+            'id_card_upload' => [
+                'sometimes'
+            ],
+            'signature' => [
+                'sometimes'
             ]
         ];
     }

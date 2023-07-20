@@ -4,6 +4,9 @@
             <td></td>
             <td>
                 Subsemnata/Subsemnatul {{ $complaint->name }}
+                @if ($complaint->cnp)
+                    , CNP {{ $complaint->cnp }}
+                @endif
                 @if (!empty($complaint->county_name) || !empty($complaint->location_name))
                     , mă aflu în
                     @if (!empty($complaint->county_name)) {{ strtoupper($complaint->county_name) }} @endif
@@ -53,7 +56,11 @@
         <tr>
             <td></td>
             <td>
-                Subsemnata/Subsemnatul {{ $complaint->name }}, declar ca
+                Subsemnata/Subsemnatul {{ $complaint->name }}
+                @if ($complaint->cnp)
+                    , CNP {{ $complaint->cnp }}
+                @endif
+                , declar ca
                 @if (!empty($complaint->county_name) || !empty($complaint->location_name))
                     @if (!empty($complaint->county_name))
                         {{ strtoupper($complaint->county_name) }}
@@ -104,11 +111,30 @@
         </td>
         <td></td>
     </tr>
+    @if ($complaint->idCard)
+        <tr>
+            <td></td>
+            <td>
+                <p>Scanare carte de identitate</p>
+                <ul>
+                    <li>
+                        <a target="_blank" href="{{ \Illuminate\Support\Facades\URL::signedRoute('uploads.show', ['uploadHashName' => $complaint->idCard->hash_name]) }}">Carte de identitare</a>
+                    </li>
+                </ul>
+
+            </td>
+            <td></td>
+        </tr>
+    @endif
     <tr>
         <td></td>
         <td>
             SEMNAT,<br>
             {{ strtoupper($complaint->name) }}
+            @if ($complaint->signature)
+                <br>
+                <img width="200px" src="{{ \Illuminate\Support\Facades\URL::signedRoute('uploads.show', ['uploadHashName' => $complaint->signature->hash_name]) }}" />
+            @endif
         </td>
         <td></td>
     </tr>

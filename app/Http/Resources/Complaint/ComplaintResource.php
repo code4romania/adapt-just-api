@@ -17,12 +17,14 @@ class ComplaintResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
+        $emailSent = view('emails.complaint', ['complaint' => $this->resource])->render();
         return [
             'id' => $this->id,
             'victim' => $this->victim,
             'type' => $this->type,
             'type_label' => ComplaintConstant::typeLabels()[$this->type] ?? '',
             'name' => $this->name,
+            'cnp' => $this->cnp,
             'location_id' => $this->location_id,
             'location' => $this->location_id ? [
                 'type' => $this->location->type,
@@ -49,9 +51,13 @@ class ComplaintResource extends JsonResource
             'lat' => $this->lat,
             'lng' => $this->lng,
 
+            'id_card' => $this->idCard ? new UploadResource($this->idCard) : null,
+            'signature' => $this->idCard ? new UploadResource($this->signature) : null,
+
             'register_number' => $this->register_number,
             'created_at' => Carbon::parse($this->created_at)->format('Y-m-d H:i'),
             'updated_at' =>  Carbon::parse($this->updated_at)->format('Y-m-d H:i'),
+            'email_sent' => $emailSent
         ];
     }
 }

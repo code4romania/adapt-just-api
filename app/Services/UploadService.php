@@ -46,6 +46,28 @@ class UploadService
     }
 
 
+    public static function uploadBase64($base64, $dir = 'temp')
+    {
+        $fileName = uniqid(rand()).'.png';
+        $filePath = $dir.'/'.$fileName;
+        $path = Storage::disk('s3')->put($filePath, base64_decode($base64));
+
+        $input = [
+            'extension' => 'png',
+            'name' => $fileName,
+            'mime' => 'image/png',
+            'size' => 0,
+            'path' => $filePath
+        ];
+
+        $upload = UploadService::create($input);
+
+        $hashName = md5($upload->path . $upload->id);
+        $upload->update(['hash_name' => $hashName]);
+
+        return $upload;
+    }
+
     /**
      * @param Model $upload
      * @param string $dir

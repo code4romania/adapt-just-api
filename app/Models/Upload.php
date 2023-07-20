@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\Storage;
 
 class Upload extends Model
 {
@@ -32,5 +33,11 @@ class Upload extends Model
         'mime' => 'string',
         'hash_name' => 'string'
     ];
+
+
+    public function getDataUrlAttribute()
+    {
+        return Storage::disk()->temporaryUrl($this->path, now()->addDay(2));
+    }
 
 }
