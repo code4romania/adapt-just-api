@@ -97,11 +97,13 @@
                 <p>Am atașat plângerii următoarele dovezi</p>
                 <ul>
                     @foreach($complaint->uploads as $upload)
-                        <li>
-                            <a target="_blank" href="{{ \Illuminate\Support\Facades\URL::signedRoute('uploads.show', ['uploadHashName' => $upload->hash_name]) }}">
-                                {{ $upload->name }}
-                            </a>
-                        </li>
+                        @if ($upload->hash_name)
+                            <li>
+                                <a target="_blank" href="{{ \Illuminate\Support\Facades\URL::signedRoute('uploads.show', ['uploadHashName' => $upload->hash_name]) }}">
+                                    {{ $upload->name }}
+                                </a>
+                            </li>
+                        @endif
                     @endforeach
                 </ul>
             @endif
@@ -111,7 +113,7 @@
         </td>
         <td></td>
     </tr>
-    @if ($complaint->idCard)
+    @if ($complaint->idCard && $complaint->idCard->hash_name)
         <tr>
             <td></td>
             <td>
@@ -131,7 +133,7 @@
         <td>
             SEMNAT,<br>
             {{ strtoupper($complaint->name) }}
-            @if ($complaint->signature)
+            @if ($complaint->signature && $complaint->signature->hash_name)
                 <br>
                 <img width="200px" src="{{ \Illuminate\Support\Facades\URL::signedRoute('uploads.show', ['uploadHashName' => $complaint->signature->hash_name]) }}" />
             @endif
