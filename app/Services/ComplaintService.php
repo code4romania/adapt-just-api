@@ -7,11 +7,13 @@ use App\Mail\ComplaintEmail;
 use App\Models\Complaint;
 use App\Models\Filters\DateBetweenFilter;
 use App\Models\Institution;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Carbon\Carbon;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Mail;
 use Spatie\QueryBuilder\AllowedFilter;
 use Spatie\QueryBuilder\QueryBuilder;
@@ -147,4 +149,5 @@ class ComplaintService
 
 
     }
+
 }

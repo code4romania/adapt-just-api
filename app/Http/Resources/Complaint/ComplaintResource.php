@@ -17,7 +17,7 @@ class ComplaintResource extends JsonResource
      */
     public function toArray(Request $request): array
     {
-        $emailSent = view('emails.complaint', ['complaint' => $this->resource])->render();
+
         return [
             'id' => $this->id,
             'victim' => $this->victim,
@@ -57,7 +57,7 @@ class ComplaintResource extends JsonResource
             'register_number' => $this->register_number,
             'created_at' => Carbon::parse($this->created_at)->format('Y-m-d H:i'),
             'updated_at' =>  Carbon::parse($this->updated_at)->format('Y-m-d H:i'),
-            'email_sent' => $emailSent
+            'email_sent' => $this->emailSent
         ];
     }
 }

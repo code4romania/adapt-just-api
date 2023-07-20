@@ -106,4 +106,9 @@ class Complaint extends Model
         return $details;
     }
 
+    public function getEmailSentAttribute()
+    {
+        return view('emails.complaint', ['complaint' => $this])->render();
+    }
+
 }

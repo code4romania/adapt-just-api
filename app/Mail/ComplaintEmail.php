@@ -3,8 +3,11 @@
 namespace App\Mail;
 
 use App\Models\Complaint;
+use App\Services\ComplaintService;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Mail\Attachment;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
@@ -44,7 +47,7 @@ class ComplaintEmail extends Mailable
             view: 'emails.complaint',
             with: [
                 'complaint' => $this->complaint
-            ],
+            ]
         );
     }
 
@@ -55,6 +58,10 @@ class ComplaintEmail extends Mailable
      */
     public function attachments(): array
     {
-        return [];
+        return [
+            Attachment::fromData(fn () => Pdf::loadHTML($this->complaint->emailSent)->stream('download.pdf')->getContent(), 'Report.pdf')
+                ->withMime('application/pdf')
+
+        ];
     }
 }
