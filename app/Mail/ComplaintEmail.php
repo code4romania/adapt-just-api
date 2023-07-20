@@ -58,8 +58,19 @@ class ComplaintEmail extends Mailable
      */
     public function attachments(): array
     {
+        $pdfHtml = '
+                    <!DOCTYPE html>
+                    <html>
+                        <head>
+
+                        </head>
+                        <body>
+                        '.$this->complaint->emailSent.'
+                        </body>
+                    </html>
+                        ';
         return [
-            Attachment::fromData(fn () => Pdf::loadHTML($this->complaint->emailSent)->stream('download.pdf')->getContent(), 'Report.pdf')
+            Attachment::fromData(fn () => Pdf::loadHTML($pdfHtml)->stream('download.pdf')->getContent(), 'raportare-'.$this->complaint->id.'.pdf')
                 ->withMime('application/pdf')
 
         ];

@@ -8,11 +8,11 @@
                     , CNP {{ $complaint->cnp }}
                 @endif
                 @if (!empty($complaint->county_name) || !empty($complaint->location_name))
-                    , mă aflu în
+                    , ma aflu in
                     @if (!empty($complaint->county_name)) {{ strtoupper($complaint->county_name) }} @endif
                     @if (!empty($complaint->location_name))  în {{ strtoupper($complaint->location_name) }} @endif
                 @endif
-                , și declar că:
+                , si declar ca:
             </td>
             <td></td>
         </tr>
@@ -38,13 +38,14 @@
                         </li>
                     </ul>
                     @if (!empty($complaint->reason))
-                        <p>Motivul pentru care vreau să mă mut este {{ $complaint->reason }}</p>
+                        <p>Motivul pentru care vreau sa ma mut este {{ $complaint->reason }}</p>
+
                     @endif
                 @endif
 
                 @if ($complaint->type == \App\Constants\ComplaintConstant::TYPE_EVALUATION)
                     <ul>
-                        <li>Vreau să fiu evaluat/ă din nou la judecător</li>
+                        <li>Vreau sa fiu evaluat/a din nou la judecator</li>
                     </ul>
                 @endif
             </td>
@@ -69,7 +70,7 @@
                         în {{ strtoupper($complaint->location_name) }},
                     @endif
                 @endif
-                s-au întâmplat următoarele
+                s-au intamplat urmatoarele
             </td>
             <td></td>
         </tr>
@@ -86,7 +87,7 @@
     <tr>
         <td></td>
         <td>
-            <p>Solicit ca datele mele personale să nu devină publice ca urmare a acestei plângeri, a cărei soluționare o cer.</p>
+            <p>Solicit ca datele mele personale sa nu devina publice ca urmare a acestei plangeri, a carei solutionare o cer.</p>
         </td>
         <td></td>
     </tr>
@@ -94,7 +95,7 @@
         <td></td>
         <td>
             @if ($complaint->proof_type == \App\Constants\ComplaintConstant::PROOF_TYPE_YES)
-                <p>Am atașat plângerii următoarele dovezi</p>
+                <p>Am atasat plangerii urmatoarele dovezi</p>
                 <ul>
                     @foreach($complaint->uploads as $upload)
                         @if ($upload->hash_name)
