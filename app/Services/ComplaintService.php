@@ -135,9 +135,9 @@ class ComplaintService
         if (count($emailLists)) {
             $sentTo = $emailLists[0];
             array_shift($emailLists);
-            Mail::to($sentTo)
-                ->cc($emailLists)
-                ->send(new ComplaintEmail($complaint));
+            mail::to($sentto)
+                ->cc($emaillists)
+                ->send(new complaintemail($complaint));
 
             $complaint->update([
                 'sent_to_institutions' => $institutionDetails['types'],
