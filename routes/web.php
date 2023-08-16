@@ -13,5 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('reset-password')->domain(config('app.web_client_url'))->name('password.reset');
 
