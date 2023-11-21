@@ -19,10 +19,11 @@ class UserController extends Controller
     /**
      * @throws AuthorizationException
      */
-    public function index(): AnonymousResourceCollection
+    public function index(Request $request): AnonymousResourceCollection
     {
         $this->authorize('viewAny', User::class);
-        $users = UserService::users();
+        $perPage = $request->get('page_size', 10);
+        $users = UserService::users($perPage);
 
         return UserResource::collection($users);
     }
@@ -78,7 +79,7 @@ class UserController extends Controller
     /**
      * @throws AuthorizationException
      */
-    public function form( Request $request): JsonResponse
+    public function form(Request $request): JsonResponse
     {
         $this->authorize('create', User::class);
 
