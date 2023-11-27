@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ComplaintController;
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\Public\ArticlePublicController;
+use App\Http\Controllers\Public\ContactPublicController;
 use App\Http\Controllers\Public\ResourcePublicController;
 use App\Http\Controllers\ResourceController;
 use App\Http\Controllers\SystemController;
@@ -57,6 +58,10 @@ Route::prefix('public')->name('public.')->group(function () {
 
     Route::prefix('complaints')->name('complaints.')->controller(ComplaintController::class)-> group(function () {
         Route::get('institutions/list', 'institutions');
+    });
+
+    Route::prefix('contact')->name('contact.')->controller(ContactPublicController::class)-> group(function () {
+        Route::post('send', 'send');
     });
 });
 
