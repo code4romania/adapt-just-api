@@ -80,8 +80,9 @@ class ComplaintController extends Controller
 
         $institutionDetails = ComplaintService::getInsititutionsDetails($victim, $type, $countyISO, $lat, $lng);
 
-        return $institutionDetails['types'] ?? [];
+        return [
+            'emails' => $institutionDetails['emails'] ?? [],
+            'institutions' => $institutionDetails['types'] ?? [],
+        ];
     }
-
-
 }

@@ -86,13 +86,6 @@
     <tr>
         <td></td>
         <td>
-            <p>Solicit ca datele mele personale să nu devină publice ca urmare a acestei plângeri, a cărei soluționare o cer.</p>
-        </td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>
             @if ($complaint->proof_type == \App\Constants\ComplaintConstant::PROOF_TYPE_YES)
                 <p>Am atașat plângerii următoarele dovezi</p>
                 <ul>
